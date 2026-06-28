@@ -11,4 +11,10 @@
     <PackageReference Include="Scalar.AspNetCore" Version="2.16.6" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CedarRecon.Application\CedarRecon.Application.csproj" />
+    <ProjectReference Include="..\CedarRecon.Domain\CedarRecon.Domain.csproj" />
+    <ProjectReference Include="..\CedarRecon.Infrastructure\CedarRecon.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
