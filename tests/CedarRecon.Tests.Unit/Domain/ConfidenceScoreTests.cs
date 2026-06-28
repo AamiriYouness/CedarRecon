@@ -52,6 +52,6 @@ public sealed class ConfidenceScoreTests
         var low = ConfidenceScore.Of(0.5m);
         var high = ConfidenceScore.Of(0.9m);
         (low < high).ShouldBeTrue();
-        (high >= low).ShouldBeFalse();
+        (high <= low).ShouldBeFalse();
     }
 }
