@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<IsPackable>false</IsPackable>
+	<IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.15.8" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\CedarRecon.Application\CedarRecon.Application.csproj" />
+    <ProjectReference Include="..\..\src\CedarRecon.Domain\CedarRecon.Domain.csproj" />
+    <ProjectReference Include="..\..\src\CedarRecon.Infrastructure\CedarRecon.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

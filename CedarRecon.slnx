@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/CedarRecon.Api/CedarRecon.Api.csproj" />
+    <Project Path="src/CedarRecon.Application/CedarRecon.Application.csproj" />
+    <Project Path="src/CedarRecon.Domain/CedarRecon.Domain.csproj" />
+    <Project Path="src/CedarRecon.Infrastructure/CedarRecon.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/CedarRecon.Tests.Integration/CedarRecon.Tests.Integration.csproj" />
+    <Project Path="tests/CedarRecon.Tests.Performance/CedarRecon.Tests.Performance.csproj" />
+    <Project Path="tests/CedarRecon.Tests.Unit/CedarRecon.Tests.Unit.csproj" />
+  </Folder>
+</Solution>
