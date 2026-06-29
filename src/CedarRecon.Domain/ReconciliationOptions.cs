@@ -29,8 +29,8 @@ public class ReconciliationOptions
     public decimal ExactMatchConfidence { get; init; } = 1.0m;
     public decimal FuzzyMatchMaxConfidence { get; init; } = 0.99m;
     public decimal FuzzyMatchMinConfidence { get; init; } = 0.70m;
-    public decimal AggregateMatchMaxConfidence { get; init; } = 0.69m;
-    public decimal AggregateMatchMinConfidence { get; init; } = 0.50m;
+    public decimal PartialMatchMaxConfidence { get; init; } = 0.69m;
+    public decimal PartialMatchMinConfidence { get; init; } = 0.50m;
 
     // ── Ingestion ─────────────────────────────────────────────────────────────
     /// <summary>Maximum file size in bytes before FileTooLarge error (default 500 MB).</summary>
