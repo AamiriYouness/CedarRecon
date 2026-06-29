@@ -4,6 +4,7 @@ using FsCheck.Xunit;
 using Microsoft.Extensions.Logging.Abstractions;
 using Shouldly;
 using FsCheck;
+using CedarRecon.Tests.Unit.Helpers;
 
 namespace CedarRecon.Tests.Unit.Normalization;
 
