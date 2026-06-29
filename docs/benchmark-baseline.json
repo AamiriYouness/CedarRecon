@@ -1,0 +1,8 @@
+{
+  "_comment": "Baseline benchmark results (ns) — Intel Core Ultra 7 155H, Windows 11, .NET 10, RyuJIT x86-64-v3",
+  "_updated": "2026-06-29",
+  "_how_to_update": "Run: python3 .github/scripts/regression_check.py --baseline docs/benchmark-baseline.json --current <artifacts-dir> --method Decimal --update-baseline",
+  "Decimal": 9.886,
+  "ScaledLong": 33.08,
+  "UnsafeMantissa": 13.301
+}
