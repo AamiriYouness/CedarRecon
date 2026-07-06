@@ -1,0 +1,204 @@
+name: Benchmarks
+
+on:
+  pull_request:
+    branches:
+      - develop
+    types: [labeled]
+
+  workflow_dispatch:
+    inputs:
+      filter:
+        description: 'BenchmarkDotNet filter (e.g. *ExceptionClassifier* or * for all)'
+        required: false
+        default: '*'
+      baseline_ref:
+        description: 'Git ref to use as baseline (default: develop)'
+        required: false
+        default: 'develop'
+
+# Only run when the 'status: needs-benchmark' label is added to a PR,
+# or when manually triggered. Benchmarks are expensive — do not run on
+# every push.
+
+env:
+  DOTNET_VERSION: '10.0.x'
+  DOTNET_NOLOGO: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+
+jobs:
+  benchmark:
+    name: Run Benchmarks
+    # Use a dedicated runner for consistent hardware — GitHub-hosted runners
+    # have variable performance that can produce misleading regression signals.
+    # Replace 'ubuntu-latest' with a self-hosted runner label if available.
+    runs-on: ubuntu-latest
+    if: |
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'status: needs-benchmark'))
+
+    permissions:
+      pull-requests: write
+      contents: read
+
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          path: pr
+
+      - name: Checkout baseline branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.baseline_ref || 'develop' }}
+          path: baseline
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      # ── Run baseline benchmarks ──────────────────────────────────────────────
+
+      - name: Restore baseline
+        working-directory: baseline
+        run: dotnet restore
+
+      - name: Build baseline (Release)
+        working-directory: baseline
+        run: dotnet build --no-restore --configuration Release
+
+      - name: Run baseline benchmarks
+        working-directory: baseline
+        run: |
+          dotnet run \
+            --no-build \
+            --configuration Release \
+            --project tests/CedarRecon.Tests.Performance \
+            -- \
+            --filter "${{ github.event.inputs.filter || '*ExceptionClassifier*|*ColumnarClassifierPhase*' }}" \
+            --exporters json \
+            --artifacts ./benchmark-results
+        env:
+          BENCHMARK_OUTPUT: baseline-results
+
+      - name: Move baseline results
+        run: |
+          mkdir -p ./results/baseline
+          cp baseline/benchmark-results/**/*.json ./results/baseline/ 2>/dev/null || true
+
+      # ── Run PR benchmarks ────────────────────────────────────────────────────
+
+      - name: Restore PR branch
+        working-directory: pr
+        run: dotnet restore
+
+      - name: Build PR branch (Release)
+        working-directory: pr
+        run: dotnet build --no-restore --configuration Release
+
+      - name: Run PR benchmarks
+        working-directory: pr
+        run: |
+          dotnet run \
+            --no-build \
+            --configuration Release \
+            --project tests/CedarRecon.Tests.Performance \
+            -- \
+            --filter "${{ github.event.inputs.filter || '*ExceptionClassifier*|*ColumnarClassifierPhase*' }}" \
+            --exporters json \
+            --artifacts ./benchmark-results
+
+      - name: Move PR results
+        run: |
+          mkdir -p ./results/pr
+          cp pr/benchmark-results/**/*.json ./results/pr/ 2>/dev/null || true
+
+      # ── Upload artifacts ──────────────────────────────────────────────────────
+
+      - name: Upload benchmark results
+        uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-results
+          path: ./results
+          retention-days: 30
+
+      # ── Compare and comment ───────────────────────────────────────────────────
+
+      - name: Generate comparison report
+        id: compare
+        run: |
+          python3 << 'PYTHON'
+          import json
+          import os
+          import glob
+
+          baseline_files = glob.glob('./results/baseline/*.json')
+          pr_files = glob.glob('./results/pr/*.json')
+
+          def load_results(files):
+              results = {}
+              for f in files:
+                  with open(f) as fp:
+                      data = json.load(fp)
+                  for bench in data.get('Benchmarks', []):
+                      key = f"{bench['Type']}.{bench['Method']}.N={bench.get('Parameters', '')}"
+                      results[key] = bench['Statistics']['Mean']
+              return results
+
+          baseline = load_results(baseline_files)
+          pr_data  = load_results(pr_files)
+
+          lines = []
+          lines.append("## Benchmark Results\n")
+          lines.append("| Benchmark | Baseline | PR | Δ | Signal |")
+          lines.append("|---|---|---|---|---|")
+
+          regressions = []
+          for key in sorted(set(list(baseline.keys()) + list(pr_data.keys()))):
+              b = baseline.get(key)
+              p = pr_data.get(key)
+              if b is None or p is None:
+                  continue
+              delta = (p - b) / b * 100
+              signal = "✅" if delta < 5 else ("⚠️" if delta < 15 else "❌ REGRESSION")
+              if delta >= 15:
+                  regressions.append(key)
+              lines.append(f"| `{key}` | {b/1000:.1f} µs | {p/1000:.1f} µs | {delta:+.1f}% | {signal} |")
+
+          lines.append("\n")
+          if regressions:
+              lines.append(f"**⚠️ {len(regressions)} benchmark(s) regressed by ≥15%.**")
+              lines.append("Review before merging.")
+          else:
+              lines.append("**✅ No significant regressions detected.**")
+
+          report = '\n'.join(lines)
+          print(report)
+
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write(f"has_regressions={'true' if regressions else 'false'}\n")
+
+          with open('./benchmark-report.md', 'w') as f:
+              f.write(report)
+          PYTHON
+
+      - name: Comment on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('./benchmark-report.md', 'utf8');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: report
+            });
+
+      - name: Fail on significant regression
+        if: steps.compare.outputs.has_regressions == 'true'
+        run: |
+          echo "One or more benchmarks regressed by ≥15%. Review the benchmark comment on the PR."
+          exit 1
