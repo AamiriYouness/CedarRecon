@@ -2,7 +2,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CedarRecon.Domain\CedarRecon.Domain.csproj" />
-    <ProjectReference Include="..\CedarRecon.Infrastructure\CedarRecon.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
