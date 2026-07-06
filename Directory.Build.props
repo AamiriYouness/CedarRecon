@@ -1,5 +1,20 @@
 <Project>
   <PropertyGroup>
+    <!-- Version — bump this before tagging a release, matches git tag -->
+    <Version>0.9.0</Version>
+    <AssemblyVersion>0.9.0.0</AssemblyVersion>
+    <FileVersion>0.9.0.0</FileVersion>
+
+    <!-- Package metadata -->
+    <Authors>Youness</Authors>
+    <Company>Cedar Technologies</Company>
+    <Product>CedarRecon</Product>
+    <Copyright>Copyright © 2026 Youness — Cedar Technologies</Copyright>
+    <RepositoryUrl>https://github.com/YOUR_USERNAME/CedarRecon</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+
+    <!-- Build -->
     <LangVersion>14</LangVersion>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -8,4 +23,11 @@
     <RootNamespace>$(MSBuildProjectName)</RootNamespace>
     <AssemblyName>$(MSBuildProjectName)</AssemblyName>
   </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Microsoft.AspNetCore.OpenApi 10.0.9 transitively pulls in
+         Microsoft.OpenApi 2.7.5 — GHSA-v5pm-xwqc-g5wc (high severity).
+         Force patched version until upstream ships a fix. -->
+    <PackageReference Include="Microsoft.OpenApi" Version="2.7.5" />
+  </ItemGroup>
 </Project>
