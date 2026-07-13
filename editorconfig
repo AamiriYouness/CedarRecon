@@ -1,0 +1,218 @@
+# CedarRecon — EditorConfig
+# https://editorconfig.org
+
+root = true
+
+[*]
+indent_style              = space
+indent_size               = 4
+end_of_line               = crlf
+charset                   = utf-8
+trim_trailing_whitespace  = true
+insert_final_newline      = true
+
+[*.{cs,csx}]
+# ── Indentation ───────────────────────────────────────────────
+indent_style                                                  = space
+indent_size                                                   = 4
+tab_width                                                     = 4
+
+# ── Newlines ──────────────────────────────────────────────────
+csharp_new_line_before_open_brace                             = all
+csharp_new_line_before_else                                   = true
+csharp_new_line_before_catch                                  = true
+csharp_new_line_before_finally                                = true
+csharp_new_line_before_members_in_object_initializers         = true
+csharp_new_line_before_members_in_anonymous_types             = true
+csharp_new_line_between_query_expression_clauses              = true
+
+# ── Spacing ───────────────────────────────────────────────────
+csharp_space_after_cast                                       = false
+csharp_space_before_colon_in_inheritance_clause               = true
+csharp_space_after_colon_in_inheritance_clause                = true
+csharp_space_around_binary_operators                          = before_and_after
+csharp_space_between_method_declaration_parameter_list_parentheses = false
+csharp_space_between_method_call_parameter_list_parentheses   = false
+
+# ── Wrapping ──────────────────────────────────────────────────
+csharp_preserve_single_line_statements                        = false
+csharp_preserve_single_line_blocks                            = true
+
+# ── Using directives ─────────────────────────────────────────
+csharp_using_directive_placement                              = outside_namespace:warning
+dotnet_sort_system_directives_first                           = true
+dotnet_separate_import_directive_groups                       = false
+
+# ── this. qualifier — never ───────────────────────────────────
+dotnet_style_qualification_for_field                          = false:warning
+dotnet_style_qualification_for_property                       = false:warning
+dotnet_style_qualification_for_method                         = false:warning
+dotnet_style_qualification_for_event                          = false:warning
+
+# ── Language keywords over framework types ────────────────────
+dotnet_style_predefined_type_for_locals_parameters_members    = true:warning
+dotnet_style_predefined_type_for_member_access                = true:warning
+
+# ── Modifier preferences ──────────────────────────────────────
+csharp_preferred_modifier_order                               = public,private,protected,internal,file,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,required,volatile,async:warning
+dotnet_style_require_accessibility_modifiers                  = always:warning
+dotnet_style_readonly_field                                   = true:warning
+
+# ── Expression preferences ────────────────────────────────────
+dotnet_style_object_initializer                               = true:suggestion
+dotnet_style_collection_initializer                           = true:suggestion
+dotnet_style_prefer_auto_properties                           = true:warning
+dotnet_style_explicit_tuple_names                             = true:warning
+dotnet_style_prefer_inferred_tuple_names                      = true:suggestion
+dotnet_style_prefer_compound_assignment                       = true:suggestion
+dotnet_style_prefer_simplified_interpolation                  = true:suggestion
+dotnet_style_prefer_simplified_boolean_expressions            = true:warning
+dotnet_style_coalesce_expression                              = true:suggestion
+dotnet_style_null_propagation                                 = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:warning
+
+# ── var preferences ───────────────────────────────────────────
+csharp_style_var_for_built_in_types                           = false:suggestion
+csharp_style_var_when_type_is_apparent                        = true:suggestion
+csharp_style_var_elsewhere                                    = false:suggestion
+
+# ── Expression-bodied members ─────────────────────────────────
+csharp_style_expression_bodied_methods                        = when_on_single_line:suggestion
+csharp_style_expression_bodied_constructors                   = false:suggestion
+csharp_style_expression_bodied_operators                      = when_on_single_line:suggestion
+csharp_style_expression_bodied_properties                     = when_on_single_line:suggestion
+csharp_style_expression_bodied_indexers                       = when_on_single_line:suggestion
+csharp_style_expression_bodied_accessors                      = when_on_single_line:suggestion
+csharp_style_expression_bodied_lambdas                        = when_on_single_line:suggestion
+csharp_style_expression_bodied_local_functions                = when_on_single_line:suggestion
+
+# ── Pattern matching ──────────────────────────────────────────
+csharp_style_pattern_matching_over_is_with_cast_check         = true:warning
+csharp_style_pattern_matching_over_as_with_null_check         = true:warning
+csharp_style_prefer_switch_expression                         = true:suggestion
+csharp_style_prefer_pattern_matching                          = true:suggestion
+csharp_style_prefer_not_pattern                               = true:suggestion
+
+# ── Null checks ───────────────────────────────────────────────
+csharp_style_prefer_null_check_over_type_check                = true:warning
+csharp_style_conditional_delegate_call                        = true:warning
+
+# ── Async / await ─────────────────────────────────────────────
+# These rules enforce correct async patterns.
+# Violations are treated as ERRORS because async mistakes in a
+# financial engine (fire-and-forget, blocking .Result calls,
+# missing ConfigureAwait) cause deadlocks and lost exceptions.
+
+dotnet_diagnostic.CA2007.severity                             = error
+# CA2007: Do not directly await a Task — use ConfigureAwait(false)
+# in library code. In application code (Api, Runtime) this can be
+# suppressed per-project. In Core, Indexing, Execution, Classification
+# it is always an error.
+
+dotnet_diagnostic.CA2008.severity                             = error
+# CA2008: Do not create tasks without passing a TaskScheduler
+
+dotnet_diagnostic.CA2012.severity                             = error
+# CA2012: Use ValueTasks correctly — do not await twice
+
+dotnet_diagnostic.CA2016.severity                             = error
+# CA2016: Forward CancellationToken to methods that take one
+
+dotnet_diagnostic.CA2249.severity                             = warning
+# CA2249: Use string.Contains(char) instead of string.Contains(string)
+
+# ── Performance rules ─────────────────────────────────────────
+# Critical for a performance-first engine — violations are errors.
+
+dotnet_diagnostic.CA1806.severity                             = error
+# CA1806: Do not ignore method results (esp. TryAdd, TryGetValue)
+
+dotnet_diagnostic.CA1822.severity                             = warning
+# CA1822: Mark members as static when possible
+
+dotnet_diagnostic.CA1825.severity                             = error
+# CA1825: Avoid zero-length array allocations (use Array.Empty<T>())
+
+dotnet_diagnostic.CA1827.severity                             = warning
+# CA1827: Do not use Count/Length when Any() can be used
+
+dotnet_diagnostic.CA1829.severity                             = warning
+# CA1829: Use Length/Count instead of Enumerable.Count()
+
+dotnet_diagnostic.CA1845.severity                             = warning
+# CA1845: Use span-based string.AsSpan instead of Substring
+
+dotnet_diagnostic.CA1846.severity                             = warning
+# CA1846: Prefer AsSpan over Substring for string operations
+
+dotnet_diagnostic.CA1847.severity                             = warning
+# CA1847: Use char literal for single-character searches
+
+dotnet_diagnostic.CA1852.severity                             = warning
+# CA1852: Seal internal types when possible
+
+dotnet_diagnostic.CA1859.severity                             = warning
+# CA1859: Use concrete types for improved performance
+
+dotnet_diagnostic.CA1860.severity                             = warning
+# CA1860: Prefer comparing Count/Length to 0 rather than Any()
+
+# ── Reliability rules ─────────────────────────────────────────
+dotnet_diagnostic.CA2000.severity                             = warning
+# CA2000: Dispose objects before losing scope
+
+dotnet_diagnostic.CA2201.severity                             = error
+# CA2201: Do not raise reserved exception types
+
+dotnet_diagnostic.CA2213.severity                             = warning
+# CA2213: Disposable fields should be disposed
+
+# ── Roslyn analyzer rules (via Microsoft.CodeAnalysis.NetAnalyzers) ──
+
+dotnet_diagnostic.IDE0001.severity                           = suggestion
+# IDE0001: Simplify name
+
+dotnet_diagnostic.IDE0002.severity                           = suggestion
+# IDE0002: Simplify member access
+
+dotnet_diagnostic.IDE0004.severity                           = warning
+# IDE0004: Remove unnecessary cast
+
+dotnet_diagnostic.IDE0005.severity                           = warning
+# IDE0005: Remove unnecessary using directives
+
+dotnet_diagnostic.IDE0011.severity                           = warning
+# IDE0011: Add braces
+
+dotnet_diagnostic.IDE0035.severity                           = warning
+# IDE0035: Remove unreachable code
+
+dotnet_diagnostic.IDE0051.severity                           = warning
+# IDE0051: Remove unused private member
+
+dotnet_diagnostic.IDE0052.severity                           = warning
+# IDE0052: Remove unread private member
+
+dotnet_diagnostic.IDE0055.severity                           = warning
+# IDE0055: Fix formatting
+
+dotnet_diagnostic.IDE0060.severity                           = warning
+# IDE0060: Remove unused parameter
+
+dotnet_diagnostic.IDE0079.severity                           = warning
+# IDE0079: Remove unnecessary suppression
+
+dotnet_diagnostic.IDE0290.severity                           = suggestion
+# IDE0290: Use primary constructor
+
+[*.{json,yaml,yml}]
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.{csproj,props,targets}]
+indent_size = 2
+
+[Makefile]
+indent_style = tab
