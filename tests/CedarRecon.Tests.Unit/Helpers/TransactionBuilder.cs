@@ -14,20 +14,20 @@ namespace CedarRecon.Tests.Unit.Helpers;
 ///
 /// Bogus seed is fixed (42) so test runs are reproducible in CI.
 /// </summary>
-internal class TransactionBuilder
+internal sealed class TransactionBuilder
 {
     private static readonly Faker Faker = new Faker();
 
     // Deterministic defaults — stable across runs, easy to reason about in assertions
-    private Guid? _id = null;
+    private Guid? _id;
     private decimal _amount = 1_000m;
     private string _currency = "USD";
     private DateTimeOffset _valueDate = new(2024, 3, 15, 0, 0, 0, TimeSpan.Zero);
     private string _reference = "REF-001";
     private string _description = "Test transaction";
-    private string? _iban = null;
-    private string? _counterpartyName = null;
-    private DateTimeOffset? _bookingDate = null;
+    private string? _iban;
+    private string? _counterpartyName;
+    private DateTimeOffset? _bookingDate;
     private string _sourceFileName = "test.csv";
     private int _sourceRowNumber = 1;
 

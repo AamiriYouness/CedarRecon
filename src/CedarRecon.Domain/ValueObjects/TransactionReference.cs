@@ -18,11 +18,19 @@ public sealed class TransactionReference : IEquatable<TransactionReference>
         if (string.IsNullOrWhiteSpace(normalized))
             throw new ArgumentException("TransactionReference cannot be empty.", nameof(normalized));
 
-        // Enforce contract: must be pre-normalized
-        if (normalized != normalized.Trim().ToUpperInvariant())
+        if (!string.Equals(normalized, normalized.Trim(), StringComparison.Ordinal))
+        {
             throw new ArgumentException(
-                $"TransactionReference must be uppercase with no leading/trailing whitespace. Got: '{normalized}'",
+                $"TransactionReference must not have leading or trailing whitespace. Got: '{normalized}'",
                 nameof(normalized));
+        }
+
+        if (!string.Equals(normalized, normalized.ToUpperInvariant(), StringComparison.Ordinal))
+        {
+            throw new ArgumentException(
+                $"TransactionReference must be uppercase. Got: '{normalized}'",
+                nameof(normalized));
+        }
 
         return new(normalized);
     }

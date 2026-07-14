@@ -27,7 +27,7 @@ public class PartialMatchStrategyTests
     public static TheoryData<ModuloResolver.IsEvenlyDivisible, string> AllResolvers =>
         new()
         {
-            { ModuloResolver.Decimal,        nameof(ModuloResolver.Decimal)        },
+            { ModuloResolver.Standard,        nameof(ModuloResolver.Standard)        },
             { ModuloResolver.ScaledLong,     nameof(ModuloResolver.ScaledLong)     },
             { ModuloResolver.UnsafeMantissa, nameof(ModuloResolver.UnsafeMantissa) },
         };
@@ -147,7 +147,7 @@ public class PartialMatchStrategyTests
     {
         var resolver = resolverName switch
         {
-            "Decimal" => ModuloResolver.Decimal,
+            "Decimal" => ModuloResolver.Standard,
             "ScaledLong" => ModuloResolver.ScaledLong,
             "UnsafeMantissa" => ModuloResolver.UnsafeMantissa,
             _ => throw new ArgumentException(resolverName)
@@ -197,7 +197,7 @@ public class PartialMatchStrategyTests
 
         foreach (var (src, cand) in cases)
         {
-            var decimalResult = ModuloResolver.Decimal(src, cand);
+            var decimalResult = ModuloResolver.Standard(src, cand);
             var scaledResult = ModuloResolver.ScaledLong(src, cand);
 
             scaledResult.ShouldBe(decimalResult,
@@ -219,7 +219,7 @@ public class PartialMatchStrategyTests
 
         foreach (var (src, cand) in cases)
         {
-            var decimalResult = ModuloResolver.Decimal(src, cand);
+            var decimalResult = ModuloResolver.Standard(src, cand);
             var unsafeResult = ModuloResolver.UnsafeMantissa(src, cand);
 
             unsafeResult.ShouldBe(decimalResult,
@@ -232,7 +232,7 @@ public class PartialMatchStrategyTests
     {
         // 900.00 (scale=2) vs 300.0 (scale=1) — same value, different internal scale
         // UnsafeMantissa must normalise before comparing mantissas
-        var decimalResult = ModuloResolver.Decimal(900.00m, 300.0m);
+        var decimalResult = ModuloResolver.Standard(900.00m, 300.0m);
         var unsafeResult = ModuloResolver.UnsafeMantissa(900.00m, 300.0m);
 
         unsafeResult.ShouldBe(decimalResult);

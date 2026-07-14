@@ -34,7 +34,7 @@ public static class ModuloResolver
     /// Slow — CLR software-emulates decimal arithmetic, no hardware instruction.
     /// Use in tests to verify other implementations produce identical results.
     /// </summary>
-    public static readonly IsEvenlyDivisible Decimal =
+    public static readonly IsEvenlyDivisible Standard =
         static (src, cand) => src % cand == 0m;
 
     /// <summary>

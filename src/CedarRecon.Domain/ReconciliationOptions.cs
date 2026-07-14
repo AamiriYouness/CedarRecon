@@ -43,7 +43,7 @@ public class ReconciliationOptions
     public int MaxConsecutiveErrors { get; init; } = 100;
 
     /// <summary>If true, a single fatal file failure aborts the entire run. False = dead-letter and continue.</summary>
-    public bool AbortOnFatalError { get; init; } = false;
+    public bool AbortOnFatalError { get; init; }
 
     // ── Date handling ─────────────────────────────────────────────────────────
     /// <summary>Assumed timezone for dates without explicit offset (default UTC).</summary>

@@ -25,11 +25,11 @@ public class ModuloBucketBenchmark
     }
 
     [Benchmark(Baseline = true)]
-    public int Decimal()
+    public int Standard()
     {
         var hits = 0;
         foreach (var c in _candidates)
-            if (ModuloResolver.Decimal(Source, c)) hits++;
+            if (ModuloResolver.Standard(Source, c)) hits++;
         return hits;
     }
 

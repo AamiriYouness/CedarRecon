@@ -1,7 +1,10 @@
-﻿using CedarRecon.Domain.Entities;
+﻿using CedarRecon.Application.Classification.Indexed;
+using CedarRecon.Application.Logging;
+using CedarRecon.Domain.Entities;
 using CedarRecon.Domain.Enums;
 using CedarRecon.Domain.Pipelines;
 using Microsoft.Extensions.Logging;
+using Microsoft.VisualBasic;
 using System.Collections.Concurrent;
 
 namespace CedarRecon.Application.Classification;
@@ -65,6 +68,7 @@ namespace CedarRecon.Application.Classification;
 /// Each transaction is classified exactly once — classifiedIds sets prevent
 /// double-reporting. The guard checks the current loop variable, never group[0].
 /// </summary>
+#pragma warning disable CA1873 // Reference oracle — deleted at v1.1.0, see issue #3<n>
 public sealed class ExceptionClassifier : IExceptionClassifier
 {
     private readonly ILogger<ExceptionClassifier> _logger;
@@ -286,7 +290,7 @@ public sealed class ExceptionClassifier : IExceptionClassifier
     private static int TotalLegs(
         string refKey,
         IReadOnlyDictionary<string, int> matchedLegCounts,
-        IReadOnlyDictionary<string, List<Transaction>> unmatchedByRef)
+        Dictionary<string, List<Transaction>> unmatchedByRef)
     {
         var matched = matchedLegCounts.GetValueOrDefault(refKey, 0);
         var unmatched = unmatchedByRef.TryGetValue(refKey, out var group) ? group.Count : 0;
@@ -301,11 +305,8 @@ public sealed class ExceptionClassifier : IExceptionClassifier
             .GroupBy(r => r.Reason)
             .ToDictionary(g => g.Key, g => g.Count());
 
-        _logger.LogInformation(
-            "Classification complete: {Total} exceptions — " +
-            "DupSrc={DupSrc} DupTgt={DupTgt} Split={Split} Consol={Consol} " +
-            "AmtMismatch={AmtMismatch} DateMismatch={DateMismatch} " +
-            "MissingInTgt={MissingInTgt} MissingInSrc={MissingInSrc}",
+        ClassificationLog.ColumnarCompleted(
+            _logger,
             results.Count,
             byType.GetValueOrDefault(DiscrepancyType.DuplicateInSource),
             byType.GetValueOrDefault(DiscrepancyType.DuplicateInTarget),

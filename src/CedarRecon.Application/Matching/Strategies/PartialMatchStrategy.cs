@@ -33,7 +33,7 @@ public sealed class PartialMatchStrategy : IMatchStrategy
         ModuloResolver.IsEvenlyDivisible? moduloResolver = null)
     {
         // Default to Decimal — fastest safe implementation for our domain
-        _isDivisible = moduloResolver ?? ModuloResolver.Decimal;
+        _isDivisible = moduloResolver ?? ModuloResolver.Standard;
     }
 
     public MatchStrategy Strategy => MatchStrategy.PartialMatch;
