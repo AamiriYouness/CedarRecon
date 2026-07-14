@@ -68,6 +68,7 @@ namespace CedarRecon.Application.Classification;
 /// Each transaction is classified exactly once — classifiedIds sets prevent
 /// double-reporting. The guard checks the current loop variable, never group[0].
 /// </summary>
+#pragma warning disable CA1873 // Reference oracle — deleted at v1.1.0, see issue #3<n>
 public sealed class ExceptionClassifier : IExceptionClassifier
 {
     private readonly ILogger<ExceptionClassifier> _logger;
