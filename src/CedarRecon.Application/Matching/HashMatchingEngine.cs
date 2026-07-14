@@ -1,4 +1,5 @@
-﻿using CedarRecon.Application.Matching.Strategies;
+﻿using CedarRecon.Application.Logging;
+using CedarRecon.Application.Matching.Strategies;
 using CedarRecon.Domain;
 using CedarRecon.Domain.Entities;
 using CedarRecon.Domain.Enums;
@@ -24,7 +25,7 @@ namespace CedarRecon.Application.Matching;
 ///   - MatchContext owns all claim state via ConcurrentDictionary (lock-free CAS)
 ///   - _targetIndex and _context are swapped as a unit at end of build — no partial state
 /// </summary>
-public sealed class HashMatchingEngine : IMatchingEngine
+public sealed partial class HashMatchingEngine : IMatchingEngine
 {
     private readonly ILogger<HashMatchingEngine> _logger;
     private readonly IReadOnlyList<IMatchStrategy> _strategies;
@@ -88,9 +89,7 @@ public sealed class HashMatchingEngine : IMatchingEngine
         _targetIndex = index;
         _context = context;
 
-        _logger.LogInformation(
-            "Target index built: {UniqueKeys} unique keys from {Total} transactions using {Strategies} strategies",
-            index.Count, total, _strategies.Count);
+        MatchingLog.IndexBuilt(_logger, index.Count, total, _strategies.Count);
     }
 
     /// <summary>

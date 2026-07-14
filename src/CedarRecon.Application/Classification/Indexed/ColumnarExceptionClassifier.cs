@@ -1,4 +1,5 @@
-﻿using CedarRecon.Domain.Entities;
+﻿using CedarRecon.Application.Logging;
+using CedarRecon.Domain.Entities;
 using CedarRecon.Domain.Pipelines;
 using Microsoft.Extensions.Logging;
 
@@ -24,7 +25,7 @@ namespace CedarRecon.Application.Classification.Indexed;
 ///
 /// Single-threaded by permanent design — see architecture brief.
 /// </summary>
-public sealed class ColumnarExceptionClassifier : IExceptionClassifier
+public sealed partial class ColumnarExceptionClassifier : IExceptionClassifier
 {
     private readonly ILogger<ColumnarExceptionClassifier> _logger;
 
@@ -167,19 +168,16 @@ public sealed class ColumnarExceptionClassifier : IExceptionClassifier
         for (var i = 0; i < srcState.Length; i++) counts[srcState[i]]++;
         for (var i = 0; i < tgtState.Length; i++) counts[tgtState[i]]++;
 
-        _logger.LogInformation(
-            "Classification complete (columnar engine): {Total} exceptions — " +
-            "DupSrc={DupSrc} DupTgt={DupTgt} Split={Split} Consol={Consol} " +
-            "AmtMismatch={AmtMismatch} DateMismatch={DateMismatch} " +
-            "MissingInTgt={MissingInTgt} MissingInSrc={MissingInSrc}",
-            srcState.Length + tgtState.Length,
-            counts[ClassificationStateBytes.DuplicateInSource],
-            counts[ClassificationStateBytes.DuplicateInTarget],
-            counts[ClassificationStateBytes.SplitPayment],
-            counts[ClassificationStateBytes.ConsolidatedPayment],
-            counts[ClassificationStateBytes.AmountMismatch],
-            counts[ClassificationStateBytes.DateMismatch],
-            counts[ClassificationStateBytes.MissingInTarget],
-            counts[ClassificationStateBytes.MissingInSource]);
+        ClassificationLog.ColumnarCompleted(
+             _logger,
+             srcState.Length + tgtState.Length,
+             counts[ClassificationStateBytes.DuplicateInSource],
+             counts[ClassificationStateBytes.DuplicateInTarget],
+             counts[ClassificationStateBytes.SplitPayment],
+             counts[ClassificationStateBytes.ConsolidatedPayment],
+             counts[ClassificationStateBytes.AmountMismatch],
+             counts[ClassificationStateBytes.DateMismatch],
+             counts[ClassificationStateBytes.MissingInTarget],
+             counts[ClassificationStateBytes.MissingInSource]);
     }
 }

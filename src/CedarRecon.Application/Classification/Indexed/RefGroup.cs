@@ -20,16 +20,13 @@
 /// </summary>
 public struct RefGroup
 {
-    public int ReferenceId;
-
-    public int SourceStart;
-    public int SourceCount;
-
-    public int TargetStart;
-    public int TargetCount;
-
-    public int MatchedSourceCount;
-    public int MatchedTargetCount;
+    public int ReferenceId { get; set; }
+    public int SourceStart { get; set; }
+    public int SourceCount { get; set; }
+    public int TargetStart { get; set; }
+    public int TargetCount { get; set; }
+    public int MatchedSourceCount { get; set; }
+    public int MatchedTargetCount { get; set; }
 
     /// <summary>Total source legs for this reference = unmatched + already-matched.</summary>
     public readonly int TotalSourceLegs => SourceCount + MatchedSourceCount;

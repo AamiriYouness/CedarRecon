@@ -6,6 +6,10 @@ namespace CedarRecon.Domain.Common;
 /// Result monad for domain operations that can fail without throwing.
 /// Use this instead of exceptions in domain/application layers.
 /// </summary>
+[System.Diagnostics.CodeAnalysis.SuppressMessage(
+    "Design",
+    "CA1000:Do not declare static members on generic types",
+    Justification = "Ok and Fail are intentional factory methods for the Result<T> value type.")]
 public readonly record struct Result<T>
 {
     public T? Value { get; }

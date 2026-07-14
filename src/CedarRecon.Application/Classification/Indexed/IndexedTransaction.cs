@@ -77,10 +77,10 @@ namespace CedarRecon.Application.Classification.Indexed;
 /// </summary>
 public readonly struct IndexedTransaction
 {
-    public readonly int OriginalIndex;
-    public readonly int ReferenceId;
-    public readonly long AmountMinor;
-    public readonly int DayNumber;
+    public int OriginalIndex { get; }
+    public int ReferenceId { get; }
+    public long AmountMinor { get; }
+    public int DayNumber { get; }
 
     public IndexedTransaction(
         int originalIndex,

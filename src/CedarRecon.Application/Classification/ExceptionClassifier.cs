@@ -1,7 +1,10 @@
-﻿using CedarRecon.Domain.Entities;
+﻿using CedarRecon.Application.Classification.Indexed;
+using CedarRecon.Application.Logging;
+using CedarRecon.Domain.Entities;
 using CedarRecon.Domain.Enums;
 using CedarRecon.Domain.Pipelines;
 using Microsoft.Extensions.Logging;
+using Microsoft.VisualBasic;
 using System.Collections.Concurrent;
 
 namespace CedarRecon.Application.Classification;
@@ -286,7 +289,7 @@ public sealed class ExceptionClassifier : IExceptionClassifier
     private static int TotalLegs(
         string refKey,
         IReadOnlyDictionary<string, int> matchedLegCounts,
-        IReadOnlyDictionary<string, List<Transaction>> unmatchedByRef)
+        Dictionary<string, List<Transaction>> unmatchedByRef)
     {
         var matched = matchedLegCounts.GetValueOrDefault(refKey, 0);
         var unmatched = unmatchedByRef.TryGetValue(refKey, out var group) ? group.Count : 0;
@@ -301,11 +304,8 @@ public sealed class ExceptionClassifier : IExceptionClassifier
             .GroupBy(r => r.Reason)
             .ToDictionary(g => g.Key, g => g.Count());
 
-        _logger.LogInformation(
-            "Classification complete: {Total} exceptions — " +
-            "DupSrc={DupSrc} DupTgt={DupTgt} Split={Split} Consol={Consol} " +
-            "AmtMismatch={AmtMismatch} DateMismatch={DateMismatch} " +
-            "MissingInTgt={MissingInTgt} MissingInSrc={MissingInSrc}",
+        ClassificationLog.ColumnarCompleted(
+            _logger,
             results.Count,
             byType.GetValueOrDefault(DiscrepancyType.DuplicateInSource),
             byType.GetValueOrDefault(DiscrepancyType.DuplicateInTarget),

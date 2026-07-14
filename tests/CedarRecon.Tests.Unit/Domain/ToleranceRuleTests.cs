@@ -1,5 +1,6 @@
 ﻿using CedarRecon.Domain.ValueObjects;
 using Shouldly;
+using System.Globalization;
 
 namespace CedarRecon.Tests.Unit.Domain;
 
@@ -47,8 +48,8 @@ public sealed class ToleranceRuleTests
         string source, string target, int days, bool expected)
     {
         var rule = new ToleranceRule(0m, 0m, days);
-        var s = DateTimeOffset.Parse(source);
-        var t = DateTimeOffset.Parse(target);
+        var s = DateTimeOffset.Parse(source, CultureInfo.InvariantCulture);
+        var t = DateTimeOffset.Parse(target, CultureInfo.InvariantCulture);
         rule.IsDateWithinTolerance(s, t).ShouldBe(expected);
     }
 

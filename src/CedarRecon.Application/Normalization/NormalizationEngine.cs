@@ -1,4 +1,5 @@
-﻿using CedarRecon.Domain;
+﻿using CedarRecon.Application.Logging;
+using CedarRecon.Domain;
 using CedarRecon.Domain.Common;
 using CedarRecon.Domain.Entities;
 using CedarRecon.Domain.Errors;
@@ -8,7 +9,7 @@ using Microsoft.Extensions.Logging;
 using System.Buffers;
 namespace CedarRecon.Application.Normalization;
 
-public class NormalizationEngine(
+public sealed partial class NormalizationEngine(
     ILogger<NormalizationEngine> logger,
     ReconciliationOptions? defaultOptions = null) : INormalizationEngine
 {
@@ -82,8 +83,7 @@ public class NormalizationEngine(
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Normalization failed for row {RowNumber} in {FileName}",
-                raw.RowNumber, raw.SourceFileName);
+            NormalizationLog.Failed(_logger, ex, raw.RowNumber, raw.SourceFileName);
 
             return Result<Transaction>.Fail(new InvalidTransactionError(
                 $"Normalization failed: {ex.Message}", raw.RowNumber));

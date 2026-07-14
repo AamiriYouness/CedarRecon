@@ -323,7 +323,7 @@ public class ClassifierPhaseBenchmark
     private static int TotalLegs(
         string refKey,
         IReadOnlyDictionary<string, int> matchedLegCounts,
-        IReadOnlyDictionary<string, List<Transaction>> unmatchedByRef)
+        Dictionary<string, List<Transaction>> unmatchedByRef)
     {
         var matched = matchedLegCounts.GetValueOrDefault(refKey, 0);
         var unmatched = unmatchedByRef.TryGetValue(refKey, out var group) ? group.Count : 0;

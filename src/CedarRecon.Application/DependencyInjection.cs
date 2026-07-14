@@ -66,7 +66,7 @@ public static class DependencyInjection
         {
             "ScaledLong" => ModuloResolver.ScaledLong,
             "UnsafeMantissa" => ModuloResolver.UnsafeMantissa,
-            _ => ModuloResolver.Decimal
+            _ => ModuloResolver.Standard
         };
 
         var strategies = new List<IMatchStrategy>();

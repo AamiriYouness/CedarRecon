@@ -15,7 +15,7 @@ namespace CedarRecon.Tests.Performance;
 ///
 ///   | Method          | Mean     | Ratio | Allocated |
 ///   |---------------- |---------:|------:|----------:|
-///   | Decimal         | 48.31 ns |  1.00 |         - |
+///   | Standard         | 48.31 ns |  1.00 |         - |
 ///   | ScaledLong      |  3.12 ns |  0.06 |         - |
 ///
 /// Conclusion: ScaledLong is the default — 15x faster, no unsafe, no scale risk.
@@ -29,15 +29,15 @@ public class ModuloBenchmark
     private static readonly decimal Candidate = 9_999.9999m; // ÷10
 
     [Benchmark(Baseline = true)]
-    public bool Decimal() =>
-        ModuloResolver.Decimal(Source, Candidate);
+    public static bool Standard() =>
+        ModuloResolver.Standard(Source, Candidate);
 
     [Benchmark]
-    public bool ScaledLong() =>
+    public static bool ScaledLong() =>
         ModuloResolver.ScaledLong(Source, Candidate);
 
     [Benchmark]
-    public bool UnsafeMantissa() =>
+    public static bool UnsafeMantissa() =>
         ModuloResolver.UnsafeMantissa(Source, Candidate);
 
     private sealed class Config : ManualConfig
