@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - develop
+      - main
   pull_request:
     branches:
       - develop
@@ -69,7 +70,8 @@ jobs:
             --configuration Release \
             --logger "trx;LogFileName=unit-results.trx" \
             --results-directory ./test-results/unit \
-            --collect:"XPlat Code Coverage"
+            --collect:"XPlat Code Coverage" \
+            -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=cobertura
 
       - name: Upload test results
         uses: actions/upload-artifact@v4
@@ -78,11 +80,20 @@ jobs:
           name: unit-test-results
           path: ./test-results/unit
 
-      - name: Upload coverage
+      - name: Upload coverage artifact
         uses: actions/upload-artifact@v4
         with:
           name: unit-coverage
           path: '**/coverage.cobertura.xml'
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: '**/coverage.cobertura.xml'
+          flags: unit
+          fail_ci_if_error: true
+          verbose: true
 
   equivalence-tests:
     name: Equivalence Tests
@@ -140,7 +151,9 @@ jobs:
             --no-restore \
             --configuration Release \
             --logger "trx;LogFileName=integration-results.trx" \
-            --results-directory ./test-results/integration
+            --results-directory ./test-results/integration \
+            --collect:"XPlat Code Coverage" \
+            -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=cobertura
 
       - name: Upload test results
         uses: actions/upload-artifact@v4
@@ -148,6 +161,14 @@ jobs:
         with:
           name: integration-test-results
           path: ./test-results/integration
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: '**/coverage.cobertura.xml'
+          flags: integration
+          fail_ci_if_error: true
 
   test-report:
     name: Test Report

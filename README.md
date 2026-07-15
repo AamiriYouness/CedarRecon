@@ -6,8 +6,9 @@
     <img src="https://img.shields.io/badge/Status-Active%20Development-B8F36B" alt="Status" />
     <img src="https://img.shields.io/badge/Version-v0.9.x-87D7B0" alt="Version" />
     <img src="https://img.shields.io/badge/.NET-10-0F6B4E" alt=".NET 10" />
-    <a href="https://github.com/AamiriYouness/CedarRecon/actions/workflows/ci.yml"><img src="https://github.com/AamiriYouness/CedarRecon/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
-    <a href="https://codecov.io/gh/AamiriYouness/CedarRecon"><img src="https://codecov.io/gh/AamiriYouness/CedarRecon/branch/main/graph/badge.svg" alt="codecov" /></a>
+    <a href="https://github.com/AamiriYouness/CedarRecon/actions/workflows/ci.yml?query=branch%3Adevelop"><img src="https://img.shields.io/github/actions/workflow/status/AamiriYouness/CedarRecon/ci.yml?branch=develop&label=CI%20%7C%20develop" alt="CI develop" /></a>
+    <a href="https://github.com/AamiriYouness/CedarRecon/actions/workflows/ci.yml?query=branch%3Amain"><img src="https://img.shields.io/github/actions/workflow/status/AamiriYouness/CedarRecon/ci.yml?branch=main&label=CI%20%7C%20main" alt="CI main" /></a>
+    <a href="https://codecov.io/gh/AamiriYouness/CedarRecon/branch/develop"><img src="https://codecov.io/gh/AamiriYouness/CedarRecon/branch/develop/graph/badge.svg" alt="codecov develop" /></a>
   </p>
 </div>
 
