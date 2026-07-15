@@ -1,0 +1,28 @@
+# Codecov policy — read by codecov.io on every upload.
+# Validate: curl --data-binary @codecov.yml https://codecov.io/validate
+
+coverage:
+  status:
+    project:
+      default:
+        target: auto
+        threshold: 2%        # overall coverage may drop max 2% per PR
+    patch:
+      default:
+        target: 70%          # new/changed lines must be >= 70% covered
+
+comment:
+  layout: "condensed_header, diff, flags"
+  behavior: default
+  require_changes: true      # only comment when coverage changes
+
+flags:
+  unit:
+    carryforward: true
+  integration:
+    carryforward: true
+
+ignore:
+  - "tests/**"
+  - "**/*Benchmark*.cs"
+  - "**/ScenarioBuilder*.cs"
