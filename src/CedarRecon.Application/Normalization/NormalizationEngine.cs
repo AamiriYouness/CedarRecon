@@ -18,7 +18,7 @@ public sealed partial class NormalizationEngine(
 
     // Precomputed char set for reference stripping (avoids repeated allocations)
     private static readonly SearchValues<char> ReferenceStripChars =
-        SearchValues.Create([' ', '-', '/']);
+        SearchValues.Create(" \t\r\n-/");
 
     public Result<Transaction> Normalize(RawTransaction raw)
     {
@@ -99,26 +99,41 @@ public sealed partial class NormalizationEngine(
         if (string.IsNullOrEmpty(raw))
             return string.Empty;
 
-        var span = raw.AsSpan().Trim();
+        var span = raw.AsSpan();
 
-        // Fast path: if no strippable chars and already uppercase, avoid allocation
-        if (!span.ContainsAny(ReferenceStripChars) && IsAllUpperAscii(span))
-            return span == raw.AsSpan() ? raw : span.ToString();
+        var requiresNormalization = false;
 
-        // Allocate output buffer — at most as long as input
-        var buffer = span.Length <= 256
+        foreach (var ch in span)
+        {
+            if (char.IsWhiteSpace(ch) ||
+                ch is '-' or '/' ||
+                char.IsLower(ch))
+            {
+                requiresNormalization = true;
+                break;
+            }
+        }
+
+        // Zero allocation: return the original string instance.
+        if (!requiresNormalization)
+            return raw;
+
+        Span<char> buffer = span.Length <= 256
             ? stackalloc char[span.Length]
             : new char[span.Length];
 
-        var writeIndex = 0;
+        var written = 0;
+
         foreach (var ch in span)
         {
-            if (ch is ' ' or '-' or '/')
+            if (char.IsWhiteSpace(ch) || ch is '-' or '/')
                 continue;
-            buffer[writeIndex++] = char.ToUpperInvariant(ch);
+
+            buffer[written++] = char.ToUpperInvariant(ch);
         }
 
-        return buffer[..writeIndex].ToString();
+        // Exactly one string allocation.
+        return new string(buffer[..written]);
     }
 
     /// <summary>
@@ -177,26 +192,37 @@ public sealed partial class NormalizationEngine(
         if (string.IsNullOrEmpty(raw))
             return string.Empty;
 
-        var span = raw.AsSpan().Trim();
+        var span = raw.AsSpan();
 
-        // Count non-space chars to size buffer
-        var nonSpaceCount = 0;
+        var requiresNormalization = false;
+
         foreach (var ch in span)
-            if (ch != ' ') nonSpaceCount++;
+        {
+            if (char.IsWhiteSpace(ch) || char.IsLower(ch))
+            {
+                requiresNormalization = true;
+                break;
+            }
+        }
 
-        if (nonSpaceCount == span.Length)
-            return span == raw.AsSpan() ? raw : span.ToString();
+        if (!requiresNormalization)
+            return raw;
 
-        var buffer = nonSpaceCount <= 64
-            ? stackalloc char[nonSpaceCount]
-            : new char[nonSpaceCount];
+        Span<char> buffer = span.Length <= 64
+            ? stackalloc char[span.Length]
+            : new char[span.Length];
 
-        var wi = 0;
+        var written = 0;
+
         foreach (var ch in span)
-            if (ch != ' ')
-                buffer[wi++] = char.ToUpperInvariant(ch);
+        {
+            if (char.IsWhiteSpace(ch))
+                continue;
 
-        return buffer.ToString();
+            buffer[written++] = char.ToUpperInvariant(ch);
+        }
+
+        return new string(buffer[..written]);
     }
 
     /// <summary>
