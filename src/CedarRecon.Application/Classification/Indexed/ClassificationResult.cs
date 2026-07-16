@@ -1,5 +1,5 @@
-﻿using CedarRecon.Domain.Entities;
-using CedarRecon.Domain.Enums;
+﻿using CedarRecon.Core.Entities;
+using CedarRecon.Core.Enums;
 
 namespace CedarRecon.Application.Classification.Indexed;
 

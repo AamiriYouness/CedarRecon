@@ -1,7 +1,7 @@
-﻿using CedarRecon.Domain;
-using CedarRecon.Domain.Entities;
-using CedarRecon.Domain.Enums;
-using CedarRecon.Domain.ValueObjects;
+﻿using CedarRecon.Core;
+using CedarRecon.Core.Entities;
+using CedarRecon.Core.Enums;
+using CedarRecon.Core.ValueObjects;
 
 namespace CedarRecon.Application.Matching.Strategies;
 

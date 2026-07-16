@@ -1,7 +1,7 @@
 ﻿using CedarRecon.Application.Matching;
 using CedarRecon.Application.Matching.Strategies;
-using CedarRecon.Domain;
-using CedarRecon.Domain.Enums;
+using CedarRecon.Core;
+using CedarRecon.Core.Enums;
 using CedarRecon.Tests.Unit.Helpers;
 using Shouldly;
 

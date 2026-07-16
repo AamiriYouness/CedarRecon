@@ -1,4 +1,4 @@
-﻿using CedarRecon.Domain.Entities;
+﻿using CedarRecon.Core.Entities;
 using System.Collections.Concurrent;
 
 namespace CedarRecon.Application.Matching;

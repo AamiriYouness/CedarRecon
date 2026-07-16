@@ -1,6 +1,6 @@
 ﻿using CedarRecon.Application.Logging;
-using CedarRecon.Domain.Entities;
-using CedarRecon.Domain.Pipelines;
+using CedarRecon.Core.Entities;
+using CedarRecon.Core.Pipelines;
 using Microsoft.Extensions.Logging;
 
 namespace CedarRecon.Application.Classification.Indexed;

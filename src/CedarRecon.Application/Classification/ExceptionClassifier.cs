@@ -1,8 +1,8 @@
 ﻿using CedarRecon.Application.Classification.Indexed;
 using CedarRecon.Application.Logging;
-using CedarRecon.Domain.Entities;
-using CedarRecon.Domain.Enums;
-using CedarRecon.Domain.Pipelines;
+using CedarRecon.Core.Entities;
+using CedarRecon.Core.Enums;
+using CedarRecon.Core.Pipelines;
 using Microsoft.Extensions.Logging;
 using Microsoft.VisualBasic;
 using System.Collections.Concurrent;

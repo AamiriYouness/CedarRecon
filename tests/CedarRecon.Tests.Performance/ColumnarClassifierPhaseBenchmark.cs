@@ -1,7 +1,7 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Engines;
 using CedarRecon.Application.Classification.Indexed;
-using CedarRecon.Domain.Entities;
+using CedarRecon.Core.Entities;
 
 namespace CedarRecon.Tests.Performance;
 

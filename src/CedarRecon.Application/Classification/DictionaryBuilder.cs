@@ -1,4 +1,4 @@
-﻿using CedarRecon.Domain.Entities;
+﻿using CedarRecon.Core.Entities;
 using System.Runtime.InteropServices;
 
 namespace CedarRecon.Application.Classification;

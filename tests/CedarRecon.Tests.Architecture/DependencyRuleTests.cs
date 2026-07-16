@@ -40,7 +40,7 @@ public class DependencyRuleTests
         // by asserting no type in Indexing lives in a Core-shaped namespace.
         var result = Types.InAssembly(typeof(Indexing.AssemblyMarker).Assembly)
             .Should()
-            .NotHaveDependencyOnAny("CedarRecon.Domain") // catch stragglers if anything still refs old namespace during migration
+            .NotHaveDependencyOnAny("CedarRecon.Core") // catch stragglers if anything still refs old namespace during migration
             .GetResult();
 
         Assert.True(result.IsSuccessful, Describe(result));

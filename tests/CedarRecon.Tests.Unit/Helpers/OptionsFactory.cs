@@ -1,5 +1,5 @@
-﻿using CedarRecon.Domain;
-using CedarRecon.Domain.ValueObjects;
+﻿using CedarRecon.Core;
+using CedarRecon.Core.ValueObjects;
 
 namespace CedarRecon.Tests.Unit.Helpers;
 

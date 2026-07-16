@@ -1,5 +1,5 @@
 ﻿using CedarRecon.Application.Normalization;
-using CedarRecon.Domain.Entities;
+using CedarRecon.Core.Entities;
 using FsCheck.Xunit;
 using Microsoft.Extensions.Logging.Abstractions;
 using Shouldly;

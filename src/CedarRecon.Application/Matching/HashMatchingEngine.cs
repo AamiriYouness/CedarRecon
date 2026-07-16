@@ -1,8 +1,8 @@
 ﻿using CedarRecon.Application.Logging;
 using CedarRecon.Application.Matching.Strategies;
-using CedarRecon.Domain;
-using CedarRecon.Domain.Entities;
-using CedarRecon.Domain.Enums;
+using CedarRecon.Core;
+using CedarRecon.Core.Entities;
+using CedarRecon.Core.Enums;
 using Microsoft.Extensions.Logging;
 
 namespace CedarRecon.Application.Matching;

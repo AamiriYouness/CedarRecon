@@ -1,10 +1,10 @@
 ﻿using CedarRecon.Application.Logging;
-using CedarRecon.Domain;
-using CedarRecon.Domain.Common;
-using CedarRecon.Domain.Entities;
-using CedarRecon.Domain.Errors;
-using CedarRecon.Domain.Pipelines;
-using CedarRecon.Domain.ValueObjects;
+using CedarRecon.Core;
+using CedarRecon.Core.Common;
+using CedarRecon.Core.Entities;
+using CedarRecon.Core.Errors;
+using CedarRecon.Core.Pipelines;
+using CedarRecon.Core.ValueObjects;
 using Microsoft.Extensions.Logging;
 using System.Buffers;
 namespace CedarRecon.Application.Normalization;
