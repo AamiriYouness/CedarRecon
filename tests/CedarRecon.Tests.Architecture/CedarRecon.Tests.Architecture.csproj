@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+	<NoWarn>$(NoWarn);CA1707</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.4" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageReference Include="NetArchTest.Rules" Version="1.3.2" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\CedarRecon.Core\CedarRecon.Core.csproj" />
+    <ProjectReference Include="..\..\src\CedarRecon.Indexing\CedarRecon.Indexing.csproj" />
+    <ProjectReference Include="..\..\src\CedarRecon.Execution\CedarRecon.Execution.csproj" />
+    <ProjectReference Include="..\..\src\CedarRecon.Classification\CedarRecon.Classification.csproj" />
+    <ProjectReference Include="..\..\src\CedarRecon.Infrastructure\CedarRecon.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
