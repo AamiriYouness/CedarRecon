@@ -38,7 +38,7 @@ public static class DependencyInjection
         var section = configuration.GetSection("CedarRecon");
         var executionOptions = section.Get<ExecutionOptions>() ?? new ExecutionOptions();
 
-        var reconciliationOptions = ReconciliationOptionsBuilder
+        var reconciliationOptions = ReconciliationOptionsBuilderConfigExtensions
             .FromConfig(section)
             .Build();
 

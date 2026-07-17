@@ -1,6 +1,6 @@
 ﻿using CedarRecon.Core.ValueObjects;
 
-namespace CedarRecon.Core;
+namespace CedarRecon.Core.Options;
 
 /// <summary>
 /// Central configuration object threaded through the entire pipeline.

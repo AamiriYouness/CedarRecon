@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Logging;
 
-namespace CedarRecon.Application.Logging;
+namespace CedarRecon.Core;
 
 /// <summary>
 /// Compiled log delegates for the normalization subsystem.

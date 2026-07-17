@@ -1,13 +1,13 @@
-﻿using CedarRecon.Application.Logging;
-using CedarRecon.Core;
-using CedarRecon.Core.Common;
+﻿using CedarRecon.Core.Common;
 using CedarRecon.Core.Entities;
 using CedarRecon.Core.Errors;
+using CedarRecon.Core.Options;
 using CedarRecon.Core.Pipelines;
 using CedarRecon.Core.ValueObjects;
 using Microsoft.Extensions.Logging;
 using System.Buffers;
-namespace CedarRecon.Application.Normalization;
+
+namespace CedarRecon.Core;
 
 public sealed partial class NormalizationEngine(
     ILogger<NormalizationEngine> logger,

@@ -1,4 +1,4 @@
-﻿using CedarRecon.Core;
+﻿using CedarRecon.Core.Options;
 using CedarRecon.Core.ValueObjects;
 
 namespace CedarRecon.Tests.Unit.Helpers;

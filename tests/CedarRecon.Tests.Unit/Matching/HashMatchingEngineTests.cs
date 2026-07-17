@@ -1,12 +1,12 @@
 ﻿using CedarRecon.Execution;
 using CedarRecon.Execution.Strategies;
-using CedarRecon.Core;
 using CedarRecon.Core.Entities;
 using CedarRecon.Core.Enums;
 using CedarRecon.Core.ValueObjects;
 using CedarRecon.Tests.Unit.Helpers;
 using Microsoft.Extensions.Logging.Abstractions;
 using Shouldly;
+using CedarRecon.Core.Options;
 
 namespace CedarRecon.Tests.Unit.Matching;
 

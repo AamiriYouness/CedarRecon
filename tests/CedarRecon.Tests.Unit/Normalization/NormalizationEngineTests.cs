@@ -1,10 +1,10 @@
-﻿using CedarRecon.Application.Normalization;
-using CedarRecon.Core.Entities;
+﻿using CedarRecon.Core.Entities;
 using FsCheck.Xunit;
 using Microsoft.Extensions.Logging.Abstractions;
 using Shouldly;
 using FsCheck;
 using CedarRecon.Tests.Unit.Helpers;
+using CedarRecon.Core;
 
 namespace CedarRecon.Tests.Unit.Normalization;
 
