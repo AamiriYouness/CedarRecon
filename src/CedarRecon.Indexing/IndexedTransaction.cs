@@ -1,6 +1,4 @@
-﻿using CedarRecon.Core.Entities;
-
-namespace CedarRecon.Application.Classification.Indexed;
+﻿namespace CedarRecon.Indexing;
 
 /// <summary>
 /// Compact hot-path representation of a transaction for classification.

@@ -1,5 +1,7 @@
 ﻿using CedarRecon.Core.Entities;
-namespace CedarRecon.Application.Classification.Indexed;
+using CedarRecon.Indexing;
+
+namespace CedarRecon.Classification;
 
 /// <summary>
 /// Builds ColumnarTransactionBatch arrays and RefGroup[] from raw unmatched

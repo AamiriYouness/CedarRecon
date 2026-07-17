@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Logging;
 
-namespace CedarRecon.Application.Logging;
+namespace CedarRecon.Classification;
 
 /// <summary>
 /// Compiled log delegates for the classification subsystem.

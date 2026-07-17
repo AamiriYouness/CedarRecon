@@ -1,4 +1,4 @@
-﻿namespace CedarRecon.Application.Classification.Indexed;
+﻿namespace CedarRecon.Indexing;
 
 /// <summary>
 /// Maps normalized reference strings to dense sequential integer IDs.

@@ -1,7 +1,7 @@
 ﻿using CedarRecon.Core.Entities;
 using System.Runtime.InteropServices;
 
-namespace CedarRecon.Application.Classification;
+namespace CedarRecon.Reference;
 
 /// <summary>
 /// Single-pass dictionary construction for ExceptionClassifier's reference-keyed

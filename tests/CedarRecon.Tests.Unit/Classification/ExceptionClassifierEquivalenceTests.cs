@@ -1,8 +1,8 @@
-﻿using CedarRecon.Application.Classification;
-using CedarRecon.Application.Classification.Indexed;
+﻿using CedarRecon.Classification;
 using CedarRecon.Core.Entities;
 using CedarRecon.Core.Enums;
 using CedarRecon.Core.ValueObjects;
+using CedarRecon.Reference;
 using CedarRecon.Tests.Unit.Helpers;
 using Microsoft.Extensions.Logging.Abstractions;
 using Shouldly;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CedarRecon.Application.Classification.Indexed;
+namespace CedarRecon.Indexing;
 
 /// <summary>
 /// Worklist item 4: abstracts over the two competing strategies for getting

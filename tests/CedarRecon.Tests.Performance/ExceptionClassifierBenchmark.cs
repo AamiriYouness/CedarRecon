@@ -1,10 +1,10 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Engines;
-using CedarRecon.Application.Classification;
-using CedarRecon.Application.Classification.Indexed;
+using CedarRecon.Classification;
 using CedarRecon.Core.Entities;
 using CedarRecon.Core.Enums;
 using CedarRecon.Core.ValueObjects;
+using CedarRecon.Reference;
 using Microsoft.Extensions.Logging.Abstractions;
 
 namespace CedarRecon.Tests.Performance;

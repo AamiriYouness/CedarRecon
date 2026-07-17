@@ -81,12 +81,15 @@ particular technology provides it.
 
 Indexing contains the domain-neutral physical data structures and
 algorithms used to prepare records for matching and classification:
-ColumnarTransactionBatch, RefGroup, ReferenceInterner,
-MoneyMinorUnitsConverter, and ClassificationStateBytes (the
-ProcessingState byte[] column). Its public surface is composed only of
-platform and primitive types such as int, long, byte, decimal, strings,
-spans, memories, and arrays. It exposes zero CedarRecon domain types by
-rule.
+ColumnarTransactionBatch (including its ProcessingState byte[] column,
+an untyped buffer with no attached semantics), RefGroup,
+ReferenceInterner, MoneyMinorUnitsConverter, and IndexedTransaction.
+Its public surface is composed only of platform and primitive types
+such as int, long, byte, decimal, strings, spans, memories, and
+arrays. It exposes zero CedarRecon domain types by rule.
+ClassificationStateBytes — the named-constant interpretation of
+ProcessingState's byte values — is Classification's, not Indexing's;
+see "Relocation of the reference classifier" below for why.
 
 ColumnarIndexBuilder was originally planned as an Indexing component
 but was found during the Phase 3 restructure audit to combine three
@@ -98,16 +101,16 @@ IReadOnlyList<Transaction> and IReadOnlyList<MatchedPair>, and its
 hottest per-row loop reads domain value objects directly. It therefore
 cannot enter the zero-domain-type Indexing boundary unchanged.
 
-ReferenceInterner, however, is domain-neutral and remains an Indexing
-responsibility despite its temporary location during the mechanical
-restructure: it maps string keys to stable dense integer IDs and has no
-dependency on Transaction, NormalizedReference, MatchedPair, or any
-other CedarRecon domain type. Dense IDs in the range
-[0, DistinctKeyCount) are an Indexing invariant because they enable
-histogram counting, prefix sums, direct addressing, and compact group
-representations. Its temporary location under Classification/Indexed
-during the mechanical restructure reflects the current call graph only;
-its target ownership is Indexing.
+ReferenceInterner, however, is domain-neutral: it maps string keys to
+stable dense integer IDs and has no dependency on Transaction,
+NormalizedReference, MatchedPair, or any other CedarRecon domain type.
+Dense IDs in the range [0, DistinctKeyCount) are an Indexing invariant
+because they enable histogram counting, prefix sums, direct addressing,
+and compact group representations. It moves directly to Indexing during
+the mechanical restructure — not co-located with ColumnarIndexBuilder as
+a temporary accommodation — since nothing in the accepted reference
+graph blocks the direct move (Classification is already permitted to
+reference Indexing).
 
 See docs/rfcs/preparation-stage-extraction.md for the target
 decomposition. A future Preparation stage will read domain entities and
@@ -204,33 +207,64 @@ references nothing.
 
 ### Relocation of the reference classifier
 
-The dictionary/GroupBy ExceptionClassifier moves to
-tests/CedarRecon.Tests.Unit/Reference/. It is the equivalence-test
-oracle and the source of the 1,368 ms baseline, not a product code
-path; no src/ project may reference it. It is scheduled for deletion
-at v1.1.0, when regenerated golden files take over the oracle role.
+The dictionary/GroupBy ExceptionClassifier and its DictionaryBuilder
+support move to a new CedarRecon.Reference project (references Core
+only, plus Microsoft.Extensions.Logging.Abstractions for its own
+independent log delegate — no reference to Classification or Indexing),
+not into any single test project. It is the equivalence-test oracle and
+the source of the 1,368 ms baseline, consumed by both
+CedarRecon.Tests.Unit (equivalence tests) and CedarRecon.Tests.Performance
+(benchmarks); a shared library avoids one test project depending on
+another's test framework. No src/ project may reference it. Planned for
+removal no earlier than v1.1.0, once regenerated golden files fully
+replace the equivalence oracle.
 
 ReferenceIndexBuilder (with its supporting ReferenceIndex<,>,
 ISortStrategyFactory, StructSortStrategyFactory, and
 IndexSortStrategyFactory) was found during the Phase 3 audit to have
-zero references from any src/ project. It is the struct-sort/index-sort
-investigation described in this ADR's item 4 background, retained as a
-testing oracle rather than deleted outright. It relocates alongside the
-Dictionary/GroupBy equivalence oracle in the test tree, not into
-Classification or Indexing. ColumnarIndexBuilder is the only unsplit
-builder that remains a live production path under Classification
-pending the Preparation-stage extraction; ReferenceInterner's
-Indexing-target placement (see below) is unaffected by this.
+zero references from any src/ or tests/ project. It is the struct-
+sort/index-sort investigation described in this ADR's item 4
+background, retained as a testing oracle rather than deleted outright.
+It relocates to tests/CedarRecon.Tests.Integration/Reference/, not to
+CedarRecon.Reference alongside the Dictionary/GroupBy oracle, since it
+currently has no consumer to share it with.
 
-During the v0.9.0 mechanical restructure, ColumnarIndexBuilder and
-ReferenceInterner remain co-located under Classification/Indexed
-because that matches ColumnarIndexBuilder's current call graph and
-avoids behavior changes during the project split. Their target
-destinations are not identical: ReferenceInterner is a domain-neutral
-Indexing component (see "Why Indexing is its own project" above), while
-ColumnarIndexBuilder must be split between a future Preparation stage
-and one or more physical Indexing strategies. Temporary co-location
-must not be interpreted as shared permanent ownership.
+The Phase 3 audit also corrected three placements that were assumed
+rather than verified against actual file content:
+
+- ReferenceInterner: audit confirmed it is domain-neutral and
+  therefore belongs in Indexing (see "Why Indexing is its own
+  project" above) — not co-located with ColumnarIndexBuilder as a
+  temporary accommodation.
+- IndexedTransaction was flagged as domain-coupled from a stale
+  `using CedarRecon.Core.Entities` import, but its own doc comment
+  records that the domain Transaction reference was deliberately
+  removed for cache-locality reasons; all four fields (OriginalIndex,
+  ReferenceId, AmountMinor, DayNumber) are primitives. Moves to
+  Indexing, not Classification.
+- ClassificationStateBytes was found co-defined inside
+  ColumnarTransactionBatch.cs, despite its name suggesting an Indexing
+  primitive. Its own doc comment states it is "the classification
+  operator's private interpretation of the shared execution buffer —
+  not an enum, not a public type." Extracted into its own file and
+  moved to Classification; the generic ProcessingState byte[] column
+  it interprets remains on ColumnarTransactionBatch in Indexing as an
+  untyped buffer with no attached semantics.
+
+ColumnarIndexBuilder is the only unsplit builder that remains a live
+production path under Classification pending the Preparation-stage
+extraction (see docs/rfcs/preparation-stage-extraction.md); this
+placement is not a statement that Classification owns domain encoding
+or physical index construction, only that ColumnarIndexBuilder cannot
+yet enter Indexing's zero-domain-type boundary unchanged.
+
+### Minor relocation findings
+
+ClassificationLog (EventId range 1000-1099, classification-subsystem
+log delegates) moves from Application/Logging/ to Classification in
+this same pass, ahead of the full per-project logging split otherwise
+planned for a later phase — its scope is entirely classification-
+specific, so there was no reason to leave it behind.
 
 ## Consequences
 

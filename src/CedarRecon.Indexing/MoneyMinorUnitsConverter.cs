@@ -1,4 +1,4 @@
-﻿namespace CedarRecon.Application.Classification.Indexed;
+﻿namespace CedarRecon.Indexing;
 
 /// <summary>
 /// Converts between decimal Money.Amount and the compact long AmountMinor

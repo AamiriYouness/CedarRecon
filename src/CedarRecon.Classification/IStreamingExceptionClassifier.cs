@@ -1,4 +1,5 @@
-﻿using CedarRecon.Core.Entities;
+﻿using CedarRecon.Classification;
+using CedarRecon.Core.Entities;
 
 namespace CedarRecon.Application.Classification.Indexed;
 

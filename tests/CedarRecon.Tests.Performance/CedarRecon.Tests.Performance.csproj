@@ -16,6 +16,9 @@
     <ProjectReference Include="..\..\src\CedarRecon.Application\CedarRecon.Application.csproj" />
     <ProjectReference Include="..\..\src\CedarRecon.Core\CedarRecon.Core.csproj" />
     <ProjectReference Include="..\..\src\CedarRecon.Infrastructure\CedarRecon.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\CedarRecon.Classification\CedarRecon.Classification.csproj" />
+    <ProjectReference Include="..\..\src\CedarRecon.Indexing\CedarRecon.Indexing.csproj" />
+    <ProjectReference Include="..\CedarRecon.Reference\CedarRecon.Reference.csproj" />
   </ItemGroup>
 
 </Project>

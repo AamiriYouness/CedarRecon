@@ -13,6 +13,7 @@
     <Project Path="src/CedarRecon.Infrastructure/CedarRecon.Infrastructure.csproj" />
   </Folder>
   <Folder Name="/tests/">
+    <Project Path="tests/CedarRecon.Reference/CedarRecon.Reference.csproj" />
     <Project Path="tests/CedarRecon.Tests.Architecture/CedarRecon.Tests.Architecture.csproj" />
     <Project Path="tests/CedarRecon.Tests.Integration/CedarRecon.Tests.Integration.csproj" />
     <Project Path="tests/CedarRecon.Tests.Performance/CedarRecon.Tests.Performance.csproj" />

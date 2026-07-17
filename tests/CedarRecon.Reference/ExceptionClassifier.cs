@@ -1,13 +1,10 @@
-﻿using CedarRecon.Application.Classification.Indexed;
-using CedarRecon.Application.Logging;
-using CedarRecon.Core.Entities;
+﻿using CedarRecon.Core.Entities;
 using CedarRecon.Core.Enums;
 using CedarRecon.Core.Pipelines;
 using Microsoft.Extensions.Logging;
-using Microsoft.VisualBasic;
 using System.Collections.Concurrent;
 
-namespace CedarRecon.Application.Classification;
+namespace CedarRecon.Reference;
 
 /// <summary>
 /// Classifies unmatched transactions into all 8 DiscrepancyTypes.
@@ -305,7 +302,7 @@ public sealed class ExceptionClassifier : IExceptionClassifier
             .GroupBy(r => r.Reason)
             .ToDictionary(g => g.Key, g => g.Count());
 
-        ClassificationLog.ColumnarCompleted(
+        ReferenceLog.DictionaryCompleted(
             _logger,
             results.Count,
             byType.GetValueOrDefault(DiscrepancyType.DuplicateInSource),

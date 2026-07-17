@@ -1,7 +1,8 @@
 ﻿using CedarRecon.Core.Entities;
 using CedarRecon.Core.Enums;
+using CedarRecon.Indexing;
 
-namespace CedarRecon.Application.Classification.Indexed;
+namespace CedarRecon.Classification;
 
 /// <summary>
 /// The result of a columnar classification run — owns the two

@@ -1,9 +1,8 @@
-﻿using CedarRecon.Application.Logging;
-using CedarRecon.Core.Entities;
+﻿using CedarRecon.Core.Entities;
 using CedarRecon.Core.Pipelines;
 using Microsoft.Extensions.Logging;
 
-namespace CedarRecon.Application.Classification.Indexed;
+namespace CedarRecon.Classification;
 
 /// <summary>
 /// Columnar-native implementation of the 8-phase classification cascade.

@@ -1,4 +1,4 @@
-﻿namespace CedarRecon.Application.Classification.Indexed;
+﻿namespace CedarRecon.Indexing;
 
 /// <summary>
 /// All data needed to classify every transaction sharing one reference.
