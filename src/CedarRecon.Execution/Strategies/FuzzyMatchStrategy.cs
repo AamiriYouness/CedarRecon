@@ -1,9 +1,10 @@
-﻿using CedarRecon.Core;
+﻿
+using CedarRecon.Core;
 using CedarRecon.Core.Entities;
 using CedarRecon.Core.Enums;
 using CedarRecon.Core.ValueObjects;
 
-namespace CedarRecon.Application.Matching.Strategies;
+namespace CedarRecon.Execution.Strategies;
 
 /// <summary>
 /// Strategy 2: tolerance-based amount + date matching.
@@ -56,7 +57,7 @@ public sealed class FuzzyMatchStrategy : IMatchStrategy
 
         var amountDiff = Math.Abs(source.Amount.Amount - candidate.Amount.Amount);
         if (amountDiff > 0m && tolerance.AbsoluteTolerance > 0m)
-            score -= (amountDiff / tolerance.AbsoluteTolerance) * 0.15m;
+            score -= amountDiff / tolerance.AbsoluteTolerance * 0.15m;
 
         var daysDiff = Math.Abs(
             (source.ValueDate.UtcDateTime.Date - candidate.ValueDate.UtcDateTime.Date).TotalDays);

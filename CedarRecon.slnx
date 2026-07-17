@@ -4,7 +4,9 @@
   </Folder>
   <Folder Name="/src/">
     <Project Path="src/CedarRecon.Api/CedarRecon.Api.csproj" />
-    <Project Path="src/CedarRecon.Application/CedarRecon.Application.csproj" />
+    <Project Path="src/CedarRecon.Application/CedarRecon.Application.csproj">
+      <BuildDependency Project="src/CedarRecon.Execution/CedarRecon.Execution.csproj" />
+    </Project>
     <Project Path="src/CedarRecon.Classification/CedarRecon.Classification.csproj" />
     <Project Path="src/CedarRecon.Core/CedarRecon.Core.csproj" />
     <Project Path="src/CedarRecon.Domain/CedarRecon.Domain.csproj" />

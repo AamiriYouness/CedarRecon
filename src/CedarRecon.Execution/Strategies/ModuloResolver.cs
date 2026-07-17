@@ -1,7 +1,7 @@
 ﻿using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-namespace CedarRecon.Application.Matching.Strategies;
+namespace CedarRecon.Execution.Strategies;
 
 /// <summary>
 /// Pluggable modulo implementations for IsPartialSplit.
@@ -82,7 +82,7 @@ public static class ModuloResolver
         if (scaleDiff > 0)
             candM *= Pow10((uint)scaleDiff);
         else if (scaleDiff < 0)
-            srcM *= Pow10((uint)(-scaleDiff));
+            srcM *= Pow10((uint)-scaleDiff);
 
         return srcM % candM == 0;
     }
@@ -108,12 +108,12 @@ public static class ModuloResolver
         [FieldOffset(8)] private int _lo;
         [FieldOffset(12)] private int _mid;
 
-        public int Scale => (_flags >> 16) & 0x7F;
+        public int Scale => _flags >> 16 & 0x7F;
 
         /// <summary>96-bit mantissa reconstructed as UInt128.</summary>
         public UInt128 Mantissa =>
-            ((UInt128)(uint)_hi << 64) |
-            ((UInt128)(uint)_mid << 32) |
+            (UInt128)(uint)_hi << 64 |
+            (UInt128)(uint)_mid << 32 |
             (uint)_lo;
 
         public static DecimalBits From(decimal value) =>

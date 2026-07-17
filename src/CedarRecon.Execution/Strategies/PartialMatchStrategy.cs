@@ -3,7 +3,7 @@ using CedarRecon.Core.Entities;
 using CedarRecon.Core.Enums;
 using CedarRecon.Core.ValueObjects;
 
-namespace CedarRecon.Application.Matching.Strategies;
+namespace CedarRecon.Execution.Strategies;
 
 // <summary>
 /// Strategy 3: partial/split detection.

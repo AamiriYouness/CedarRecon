@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Logging;
 
-namespace CedarRecon.Application.Logging;
+namespace CedarRecon.Execution;
 
 /// <summary>
 /// Compiled log delegates for the matching subsystem.

@@ -1,6 +1,6 @@
-﻿using CedarRecon.Application.Matching.Strategies;
+﻿using CedarRecon.Execution.Strategies;
 
-namespace CedarRecon.Application.Matching;
+namespace CedarRecon.Execution;
 
 /// <summary>
 /// Factory that constructs the ordered strategy pipeline.

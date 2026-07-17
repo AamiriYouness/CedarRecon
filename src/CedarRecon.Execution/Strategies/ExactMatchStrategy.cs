@@ -4,7 +4,7 @@ using CedarRecon.Core.Enums;
 using CedarRecon.Core.ValueObjects;
 using System.Runtime.CompilerServices;
 
-namespace CedarRecon.Application.Matching.Strategies;
+namespace CedarRecon.Execution.Strategies;
 
 /// <summary>
 /// Strategy 1: amount + currency + date must match exactly.

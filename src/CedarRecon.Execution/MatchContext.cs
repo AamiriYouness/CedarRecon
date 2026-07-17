@@ -1,7 +1,7 @@
 ﻿using CedarRecon.Core.Entities;
 using System.Collections.Concurrent;
 
-namespace CedarRecon.Application.Matching;
+namespace CedarRecon.Execution;
 
 /// <summary>
 /// Shared mutable state for one reconciliation run.

@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CedarRecon.Core\CedarRecon.Core.csproj" />
+    <ProjectReference Include="..\CedarRecon.Execution\CedarRecon.Execution.csproj" />
   </ItemGroup>
 
 </Project>

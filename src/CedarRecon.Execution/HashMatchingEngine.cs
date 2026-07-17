@@ -1,11 +1,10 @@
-﻿using CedarRecon.Application.Logging;
-using CedarRecon.Application.Matching.Strategies;
-using CedarRecon.Core;
+﻿using CedarRecon.Core;
 using CedarRecon.Core.Entities;
 using CedarRecon.Core.Enums;
+using CedarRecon.Execution.Strategies;
 using Microsoft.Extensions.Logging;
 
-namespace CedarRecon.Application.Matching;
+namespace CedarRecon.Execution;
 
 /// <summary>
 /// O(n) hash-based matching engine.

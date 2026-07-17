@@ -1,7 +1,7 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Columns;
 using BenchmarkDotNet.Configs;
-using CedarRecon.Application.Matching.Strategies;
+using CedarRecon.Execution.Strategies;
 
 namespace CedarRecon.Tests.Performance;
 
