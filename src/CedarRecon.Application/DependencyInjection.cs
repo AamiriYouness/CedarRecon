@@ -1,5 +1,4 @@
 ﻿using CedarRecon.Execution;
-using CedarRecon.Execution.Strategies;
 using CedarRecon.Application.Options;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -37,65 +36,17 @@ public static class DependencyInjection
         IConfiguration configuration)
     {
         var section = configuration.GetSection("CedarRecon");
-        var config = section.Get<CedarReconOptions>() ?? new CedarReconOptions();
+        var executionOptions = section.Get<ExecutionOptions>() ?? new ExecutionOptions();
 
-        // ── ReconciliationOptions — built via fluent builder ──────────────────
-        // Builder validates all values at startup — misconfigured deployments
-        // fail fast with a clear ArgumentException rather than silently misbehaving.
         var reconciliationOptions = ReconciliationOptionsBuilder
             .FromConfig(section)
             .Build();
 
         services.AddSingleton(reconciliationOptions);
-
-        // ── Strategy pipeline ─────────────────────────────────────────────────
-        services.AddSingleton<IReadOnlyList<IMatchStrategy>>(_ =>
-            BuildPipeline(config));
-
-        // ── Matching engine ───────────────────────────────────────────────────
-        services.AddSingleton<IMatchingEngine, HashMatchingEngine>();
+        services.AddCedarReconExecution(executionOptions);
 
         return services;
     }
 
-    // ── Pipeline builder ──────────────────────────────────────────────────────
-
-    private static IReadOnlyList<IMatchStrategy> BuildPipeline(CedarReconOptions config)
-    {
-        var resolver = config.ModuloResolver switch
-        {
-            "ScaledLong" => ModuloResolver.ScaledLong,
-            "UnsafeMantissa" => ModuloResolver.UnsafeMantissa,
-            _ => ModuloResolver.Standard
-        };
-
-        var strategies = new List<IMatchStrategy>();
-
-        foreach (var name in config.Strategies)
-        {
-            IMatchStrategy? strategy = name switch
-            {
-                "Exact" => new ExactMatchStrategy(),
-                "Fuzzy" => new FuzzyMatchStrategy(),
-                "Partial" => new PartialMatchStrategy(resolver),
-                _ => null
-            };
-
-            if (strategy is not null)
-                strategies.Add(strategy);
-        }
-
-        return strategies.Count > 0
-            ? strategies.AsReadOnly()
-            : MatchStrategyFactory.CreateWithModuloResolver(resolver);
-    }
-}
-
-// ── Config binding ────────────────────────────────────────────────────────────
-
-internal sealed class CedarReconOptions
-{
-    public string ModuloResolver { get; set; } = "Decimal";
-    public int ExpectedTargetCount { get; set; } = 65_536;
-    public string[] Strategies { get; set; } = ["Exact", "Fuzzy", "Partial"];
+ 
 }
