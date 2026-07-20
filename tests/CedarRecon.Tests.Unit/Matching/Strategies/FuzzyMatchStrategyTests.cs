@@ -1,10 +1,10 @@
-﻿using CedarRecon.Application.Matching;
-using CedarRecon.Application.Matching.Strategies;
-using CedarRecon.Domain;
-using CedarRecon.Domain.Entities;
-using CedarRecon.Domain.Enums;
+﻿using CedarRecon.Execution;
+using CedarRecon.Execution.Strategies;
+using CedarRecon.Core.Entities;
+using CedarRecon.Core.Enums;
 using CedarRecon.Tests.Unit.Helpers;
 using Shouldly;
+using CedarRecon.Core.Options;
 
 namespace CedarRecon.Tests.Unit.Matching.Strategies;
 

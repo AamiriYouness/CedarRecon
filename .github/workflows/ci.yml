@@ -128,6 +128,38 @@ jobs:
           name: equivalence-test-results
           path: ./test-results/equivalence
 
+  architecture-tests:
+    name: Architecture Tests
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: Run architecture tests
+        run: |
+          dotnet test tests/CedarRecon.Tests.Architecture \
+            --no-restore \
+            --configuration Release \
+            --logger "trx;LogFileName=architecture-results.trx" \
+            --results-directory ./test-results/architecture
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: architecture-test-results
+          path: ./test-results/architecture
+
   integration-tests:
     name: Integration Tests
     runs-on: ubuntu-latest
@@ -173,7 +205,7 @@ jobs:
   test-report:
     name: Test Report
     runs-on: ubuntu-latest
-    needs: [unit-tests, equivalence-tests, integration-tests]
+    needs: [unit-tests, equivalence-tests, architecture-tests, integration-tests]
     if: always()
 
     steps:

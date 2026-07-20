@@ -1,4 +1,5 @@
-﻿using CedarRecon.Application.Options;
+﻿using CedarRecon.Core.Options;
+using CedarRecon.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Shouldly;
 
@@ -146,7 +147,7 @@ public class ReconciliationOptionsBuilderTests
             ["CedarRecon:Tolerance:DateWindowDays"] = "7",
         });
 
-        var opts = ReconciliationOptionsBuilder
+        var opts = ReconciliationOptionsBuilderConfigExtensions
             .FromConfig(config.GetSection("CedarRecon"))
             .Build();
 
@@ -164,7 +165,7 @@ public class ReconciliationOptionsBuilderTests
     {
         var config = BuildConfig(new Dictionary<string, string?>());
 
-        var opts = ReconciliationOptionsBuilder
+        var opts = ReconciliationOptionsBuilderConfigExtensions
             .FromConfig(config.GetSection("CedarRecon"))
             .Build();
 
@@ -188,7 +189,7 @@ public class ReconciliationOptionsBuilderTests
             ["CedarRecon:Tolerance:DateWindowDays"] = "10",
         });
 
-        var opts = ReconciliationOptionsBuilder
+        var opts = ReconciliationOptionsBuilderConfigExtensions
             .FromConfig(config.GetSection("CedarRecon"))
             .Build();
 

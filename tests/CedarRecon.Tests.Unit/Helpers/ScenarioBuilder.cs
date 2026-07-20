@@ -1,6 +1,6 @@
-﻿using CedarRecon.Domain.Entities;
-using CedarRecon.Domain.Enums;
-using CedarRecon.Domain.ValueObjects;
+﻿using CedarRecon.Core.Entities;
+using CedarRecon.Core.Enums;
+using CedarRecon.Core.ValueObjects;
 namespace CedarRecon.Tests.Unit.Helpers;
 
 internal static class ScenarioBuilder

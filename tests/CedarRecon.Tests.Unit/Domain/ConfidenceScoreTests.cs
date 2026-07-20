@@ -1,4 +1,4 @@
-﻿using CedarRecon.Domain.ValueObjects;
+﻿using CedarRecon.Core.ValueObjects;
 using Shouldly;
 
 namespace CedarRecon.Tests.Unit.Domain;

@@ -29,8 +29,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\CedarRecon.Api\CedarRecon.Api.csproj" />
-    <ProjectReference Include="..\..\src\CedarRecon.Application\CedarRecon.Application.csproj" />
-    <ProjectReference Include="..\..\src\CedarRecon.Domain\CedarRecon.Domain.csproj" />
+    <ProjectReference Include="..\..\src\CedarRecon.Core\CedarRecon.Core.csproj" />
+    <ProjectReference Include="..\..\src\CedarRecon.Indexing\CedarRecon.Indexing.csproj" />
     <ProjectReference Include="..\..\src\CedarRecon.Infrastructure\CedarRecon.Infrastructure.csproj" />
   </ItemGroup>
 

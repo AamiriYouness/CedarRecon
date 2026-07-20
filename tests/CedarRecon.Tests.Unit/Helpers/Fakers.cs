@@ -1,6 +1,6 @@
 ﻿using Bogus;
-using CedarRecon.Domain.Entities;
-using CedarRecon.Domain.ValueObjects;
+using CedarRecon.Core.Entities;
+using CedarRecon.Core.ValueObjects;
 using System.Globalization;
 
 namespace CedarRecon.Tests.Unit.Helpers;
