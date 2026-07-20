@@ -1,10 +1,13 @@
 ﻿using CedarRecon.Core.Entities;
 using CedarRecon.Core.Enums;
 using CedarRecon.Core.ValueObjects;
-namespace CedarRecon.Tests.Unit.Helpers;
 
-internal static class ScenarioBuilder
+namespace CedarRecon.Reference;
+
+public static class ScenarioBuilder
 {
+    private static readonly DateTimeOffset BaseDate = new(2024, 1, 1, 0, 0, 0, TimeSpan.Zero);
+
     public static (List<Transaction> Source, List<Transaction> Target, List<MatchedPair> Matched)
         Build(int totalReferences, int seed)
     {
@@ -78,7 +81,7 @@ internal static class ScenarioBuilder
         Id = TransactionId.From(Guid.NewGuid()),
         NormalizedReference = TransactionReference.FromRaw(reference),
         Amount = Money.Of(amount, "USD"),
-        ValueDate = DateTimeOffset.UtcNow.AddDays(-rnd.Next(0, 30)),
+        ValueDate = BaseDate.AddDays(-rnd.Next(0, 30)),
         Description = "test",
         SourceFileName = "test.csv",
         SourceRowNumber = 1,

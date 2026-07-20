@@ -3,6 +3,7 @@ using BenchmarkDotNet.Engines;
 using CedarRecon.Classification;
 using CedarRecon.Core.Entities;
 using CedarRecon.Indexing;
+using CedarRecon.Reference;
 
 namespace CedarRecon.Tests.Performance;
 
