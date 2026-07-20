@@ -1,7 +1,7 @@
 ﻿using CedarRecon.Core.Options;
 using Microsoft.Extensions.Configuration;
 
-namespace CedarRecon.Application.Options;
+namespace CedarRecon.Infrastructure;
 
 /// <summary>
 /// Config-binding entry point for <see cref="ReconciliationOptionsBuilder"/>.

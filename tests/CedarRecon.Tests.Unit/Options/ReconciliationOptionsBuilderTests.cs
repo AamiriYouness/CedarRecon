@@ -1,5 +1,5 @@
-﻿using CedarRecon.Application.Options;
-using CedarRecon.Core.Options;
+﻿using CedarRecon.Core.Options;
+using CedarRecon.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Shouldly;
 
