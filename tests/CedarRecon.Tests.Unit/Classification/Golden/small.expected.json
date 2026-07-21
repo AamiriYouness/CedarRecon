@@ -1,0 +1,3418 @@
+[
+  {
+    "Reference": "CONSOL170",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -23,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL170",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -22,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL170",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -12,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL170",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -2,
+    "Reason": 7
+  },
+  {
+    "Reference": "CONSOL171",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -19,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL171",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -16,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL171",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL171",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -23,
+    "Reason": 7
+  },
+  {
+    "Reference": "CONSOL172",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL172",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": 0,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL172",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL172",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -10,
+    "Reason": 7
+  },
+  {
+    "Reference": "CONSOL173",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -2,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL173",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -2,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL173",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 7
+  },
+  {
+    "Reference": "CONSOL174",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -24,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL174",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL174",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -21,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL174",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -27,
+    "Reason": 7
+  },
+  {
+    "Reference": "CONSOL175",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -13,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL175",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -25,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL175",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -23,
+    "Reason": 7
+  },
+  {
+    "Reference": "CONSOL176",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL176",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -10,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL176",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -19,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL176",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -18,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL176",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -13,
+    "Reason": 7
+  },
+  {
+    "Reference": "CONSOL177",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -24,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL177",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -6,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL177",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -21,
+    "Reason": 7
+  },
+  {
+    "Reference": "CONSOL178",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL178",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -3,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL178",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -27,
+    "Reason": 7
+  },
+  {
+    "Reference": "CONSOL179",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL179",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -23,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL179",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -24,
+    "Reason": 7
+  },
+  {
+    "Reference": "CONSOL180",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -12,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL180",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -27,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL180",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -24,
+    "Reason": 7
+  },
+  {
+    "Reference": "CONSOL181",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -21,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL181",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -6,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL181",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL181",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -15,
+    "Reason": 7
+  },
+  {
+    "Reference": "CONSOL182",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -2,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL182",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -25,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL182",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -8,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL182",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -19,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL182",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -22,
+    "Reason": 7
+  },
+  {
+    "Reference": "CONSOL183",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL183",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -17,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL183",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -13,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL183",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -24,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL183",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -2,
+    "Reason": 7
+  },
+  {
+    "Reference": "CONSOL184",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -3,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL184",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -16,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL184",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -2,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL184",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 7
+  },
+  {
+    "Reference": "CONSOL185",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -21,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL185",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -7,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL185",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -26,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL185",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -13,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL185",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -10,
+    "Reason": 7
+  },
+  {
+    "Reference": "CONSOL186",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL186",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -8,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL186",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -13,
+    "Reason": 7
+  },
+  {
+    "Reference": "CONSOL187",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": 0,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL187",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL187",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -19,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL187",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -12,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL187",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -19,
+    "Reason": 7
+  },
+  {
+    "Reference": "CONSOL188",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -12,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL188",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -22,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL188",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL188",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -12,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL188",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 7
+  },
+  {
+    "Reference": "CONSOL189",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -7,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL189",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -6,
+    "Reason": 4
+  },
+  {
+    "Reference": "CONSOL189",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 7
+  },
+  {
+    "Reference": "DUP120",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -14,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP120",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -19,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP121",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -18,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP121",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -7,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP122",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -10,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP122",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -6,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP123",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP123",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -5,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP123",
+    "Amount": 102,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -17,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP124",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -22,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP124",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -4,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP125",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP125",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -21,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP125",
+    "Amount": 102,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -4,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP126",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -3,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP126",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -27,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP127",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": 0,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP127",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP128",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -12,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP128",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -19,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP129",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -23,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP129",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -1,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP130",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -2,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP130",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -3,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP130",
+    "Amount": 102,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -1,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP131",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -13,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP131",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -24,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP132",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -19,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP132",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -18,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP133",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP133",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP134",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -15,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP134",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -10,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP135",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -6,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP135",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -12,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP136",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -5,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP136",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -14,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP136",
+    "Amount": 102,
+    "Currency": "USD",
+    "ValueDateOffsetDays": 0,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP137",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -17,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP137",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -14,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP138",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP138",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -23,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP139",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP139",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -4,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP139",
+    "Amount": 102,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -24,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP140",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -19,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP140",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -14,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP141",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP141",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -29,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP142",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -3,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP142",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -16,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP143",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP143",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -29,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP143",
+    "Amount": 102,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -17,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP144",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -23,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP144",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -4,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP145",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP145",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -13,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP146",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -5,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP146",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -26,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP146",
+    "Amount": 102,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -1,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP147",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -25,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP147",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -13,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP148",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -8,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP148",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -26,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP148",
+    "Amount": 102,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP149",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -27,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP149",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -29,
+    "Reason": 4
+  },
+  {
+    "Reference": "DUP149",
+    "Amount": 102,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -14,
+    "Reason": 4
+  },
+  {
+    "Reference": "MISMATCH190",
+    "Amount": 148,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -22,
+    "Reason": 0
+  },
+  {
+    "Reference": "MISMATCH190",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 2
+  },
+  {
+    "Reference": "MISMATCH191",
+    "Amount": 114,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 0
+  },
+  {
+    "Reference": "MISMATCH191",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -18,
+    "Reason": 2
+  },
+  {
+    "Reference": "MISMATCH192",
+    "Amount": 103,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 0
+  },
+  {
+    "Reference": "MISMATCH192",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -21,
+    "Reason": 2
+  },
+  {
+    "Reference": "MISMATCH193",
+    "Amount": 135,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -18,
+    "Reason": 0
+  },
+  {
+    "Reference": "MISMATCH193",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -14,
+    "Reason": 2
+  },
+  {
+    "Reference": "MISMATCH194",
+    "Amount": 136,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -21,
+    "Reason": 0
+  },
+  {
+    "Reference": "MISMATCH194",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 2
+  },
+  {
+    "Reference": "MISMATCH195",
+    "Amount": 117,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 0
+  },
+  {
+    "Reference": "MISMATCH195",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 2
+  },
+  {
+    "Reference": "MISMATCH196",
+    "Amount": 134,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -18,
+    "Reason": 0
+  },
+  {
+    "Reference": "MISMATCH196",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": 0,
+    "Reason": 2
+  },
+  {
+    "Reference": "MISMATCH197",
+    "Amount": 120,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -13,
+    "Reason": 0
+  },
+  {
+    "Reference": "MISMATCH197",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -24,
+    "Reason": 2
+  },
+  {
+    "Reference": "MISMATCH198",
+    "Amount": 135,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -23,
+    "Reason": 0
+  },
+  {
+    "Reference": "MISMATCH198",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -18,
+    "Reason": 2
+  },
+  {
+    "Reference": "MISMATCH199",
+    "Amount": 147,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -3,
+    "Reason": 0
+  },
+  {
+    "Reference": "MISMATCH199",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -21,
+    "Reason": 2
+  },
+  {
+    "Reference": "NOISESRC0",
+    "Amount": 100,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -7,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC1",
+    "Amount": 101,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -14,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC10",
+    "Amount": 110,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC100",
+    "Amount": 200,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -29,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC101",
+    "Amount": 201,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC102",
+    "Amount": 202,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -2,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC103",
+    "Amount": 203,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -14,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC104",
+    "Amount": 204,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -6,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC105",
+    "Amount": 205,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -23,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC106",
+    "Amount": 206,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -7,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC107",
+    "Amount": 207,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -4,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC108",
+    "Amount": 208,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC109",
+    "Amount": 209,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -2,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC11",
+    "Amount": 111,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -4,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC110",
+    "Amount": 210,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -15,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC111",
+    "Amount": 211,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC112",
+    "Amount": 212,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -13,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC113",
+    "Amount": 213,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC114",
+    "Amount": 214,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -27,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC115",
+    "Amount": 215,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -12,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC116",
+    "Amount": 216,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC117",
+    "Amount": 217,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -10,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC118",
+    "Amount": 218,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -15,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC119",
+    "Amount": 219,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -18,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC12",
+    "Amount": 112,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -23,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC13",
+    "Amount": 113,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -23,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC14",
+    "Amount": 114,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -24,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC15",
+    "Amount": 115,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -16,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC16",
+    "Amount": 116,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC17",
+    "Amount": 117,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -29,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC18",
+    "Amount": 118,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -25,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC19",
+    "Amount": 119,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -15,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC2",
+    "Amount": 102,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -19,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC20",
+    "Amount": 120,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -8,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC21",
+    "Amount": 121,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC22",
+    "Amount": 122,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -13,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC23",
+    "Amount": 123,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC24",
+    "Amount": 124,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -7,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC25",
+    "Amount": 125,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -15,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC26",
+    "Amount": 126,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -10,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC27",
+    "Amount": 127,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC28",
+    "Amount": 128,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC29",
+    "Amount": 129,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -29,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC3",
+    "Amount": 103,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -10,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC30",
+    "Amount": 130,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -19,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC31",
+    "Amount": 131,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -3,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC32",
+    "Amount": 132,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -2,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC33",
+    "Amount": 133,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -16,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC34",
+    "Amount": 134,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -29,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC35",
+    "Amount": 135,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -23,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC36",
+    "Amount": 136,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -3,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC37",
+    "Amount": 137,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -12,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC38",
+    "Amount": 138,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -12,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC39",
+    "Amount": 139,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC4",
+    "Amount": 104,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -3,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC40",
+    "Amount": 140,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -14,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC41",
+    "Amount": 141,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -1,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC42",
+    "Amount": 142,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -10,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC43",
+    "Amount": 143,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC44",
+    "Amount": 144,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -18,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC45",
+    "Amount": 145,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -25,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC46",
+    "Amount": 146,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -2,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC47",
+    "Amount": 147,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -26,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC48",
+    "Amount": 148,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -26,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC49",
+    "Amount": 149,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC5",
+    "Amount": 105,
+    "Currency": "USD",
+    "ValueDateOffsetDays": 0,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC50",
+    "Amount": 150,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -3,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC51",
+    "Amount": 151,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -14,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC52",
+    "Amount": 152,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -16,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC53",
+    "Amount": 153,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -2,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC54",
+    "Amount": 154,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -7,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC55",
+    "Amount": 155,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -22,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC56",
+    "Amount": 156,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -4,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC57",
+    "Amount": 157,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -29,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC58",
+    "Amount": 158,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -29,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC59",
+    "Amount": 159,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -25,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC6",
+    "Amount": 106,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC60",
+    "Amount": 160,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC61",
+    "Amount": 161,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC62",
+    "Amount": 162,
+    "Currency": "USD",
+    "ValueDateOffsetDays": 0,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC63",
+    "Amount": 163,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -3,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC64",
+    "Amount": 164,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -8,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC65",
+    "Amount": 165,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -2,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC66",
+    "Amount": 166,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -14,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC67",
+    "Amount": 167,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -29,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC68",
+    "Amount": 168,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -25,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC69",
+    "Amount": 169,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -27,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC7",
+    "Amount": 107,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC70",
+    "Amount": 170,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC71",
+    "Amount": 171,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -22,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC72",
+    "Amount": 172,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -2,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC73",
+    "Amount": 173,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -19,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC74",
+    "Amount": 174,
+    "Currency": "USD",
+    "ValueDateOffsetDays": 0,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC75",
+    "Amount": 175,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -7,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC76",
+    "Amount": 176,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -18,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC77",
+    "Amount": 177,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -5,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC78",
+    "Amount": 178,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC79",
+    "Amount": 179,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -10,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC8",
+    "Amount": 108,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -8,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC80",
+    "Amount": 180,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -5,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC81",
+    "Amount": 181,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -26,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC82",
+    "Amount": 182,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -10,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC83",
+    "Amount": 183,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -21,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC84",
+    "Amount": 184,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -25,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC85",
+    "Amount": 185,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -14,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC86",
+    "Amount": 186,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -22,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC87",
+    "Amount": 187,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC88",
+    "Amount": 188,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -23,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC89",
+    "Amount": 189,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -2,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC9",
+    "Amount": 109,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -21,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC90",
+    "Amount": 190,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC91",
+    "Amount": 191,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -1,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC92",
+    "Amount": 192,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC93",
+    "Amount": 193,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC94",
+    "Amount": 194,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -19,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC95",
+    "Amount": 195,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -13,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC96",
+    "Amount": 196,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -10,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC97",
+    "Amount": 197,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -26,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC98",
+    "Amount": 198,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISESRC99",
+    "Amount": 199,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -24,
+    "Reason": 1
+  },
+  {
+    "Reference": "NOISETGT0",
+    "Amount": 200,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -3,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT1",
+    "Amount": 201,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -23,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT10",
+    "Amount": 210,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -2,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT100",
+    "Amount": 300,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT101",
+    "Amount": 301,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -4,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT102",
+    "Amount": 302,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT103",
+    "Amount": 303,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -24,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT104",
+    "Amount": 304,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -13,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT105",
+    "Amount": 305,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -5,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT106",
+    "Amount": 306,
+    "Currency": "USD",
+    "ValueDateOffsetDays": 0,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT107",
+    "Amount": 307,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -8,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT108",
+    "Amount": 308,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -4,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT109",
+    "Amount": 309,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -14,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT11",
+    "Amount": 211,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT110",
+    "Amount": 310,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -24,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT111",
+    "Amount": 311,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -13,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT112",
+    "Amount": 312,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT113",
+    "Amount": 313,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -10,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT114",
+    "Amount": 314,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -1,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT115",
+    "Amount": 315,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -3,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT116",
+    "Amount": 316,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -24,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT117",
+    "Amount": 317,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -1,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT118",
+    "Amount": 318,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -26,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT119",
+    "Amount": 319,
+    "Currency": "USD",
+    "ValueDateOffsetDays": 0,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT12",
+    "Amount": 212,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -5,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT13",
+    "Amount": 213,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT14",
+    "Amount": 214,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -26,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT15",
+    "Amount": 215,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -21,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT16",
+    "Amount": 216,
+    "Currency": "USD",
+    "ValueDateOffsetDays": 0,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT17",
+    "Amount": 217,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -24,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT18",
+    "Amount": 218,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -1,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT19",
+    "Amount": 219,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -15,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT2",
+    "Amount": 202,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -12,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT20",
+    "Amount": 220,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -29,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT21",
+    "Amount": 221,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT22",
+    "Amount": 222,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT23",
+    "Amount": 223,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -14,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT24",
+    "Amount": 224,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -10,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT25",
+    "Amount": 225,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -5,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT26",
+    "Amount": 226,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT27",
+    "Amount": 227,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -4,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT28",
+    "Amount": 228,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -2,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT29",
+    "Amount": 229,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -14,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT3",
+    "Amount": 203,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT30",
+    "Amount": 230,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -1,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT31",
+    "Amount": 231,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -6,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT32",
+    "Amount": 232,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT33",
+    "Amount": 233,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT34",
+    "Amount": 234,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -26,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT35",
+    "Amount": 235,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -6,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT36",
+    "Amount": 236,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -5,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT37",
+    "Amount": 237,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT38",
+    "Amount": 238,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -23,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT39",
+    "Amount": 239,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -3,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT4",
+    "Amount": 204,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -19,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT40",
+    "Amount": 240,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT41",
+    "Amount": 241,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -14,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT42",
+    "Amount": 242,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT43",
+    "Amount": 243,
+    "Currency": "USD",
+    "ValueDateOffsetDays": 0,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT44",
+    "Amount": 244,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -25,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT45",
+    "Amount": 245,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -23,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT46",
+    "Amount": 246,
+    "Currency": "USD",
+    "ValueDateOffsetDays": 0,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT47",
+    "Amount": 247,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -6,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT48",
+    "Amount": 248,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -14,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT49",
+    "Amount": 249,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -3,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT5",
+    "Amount": 205,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -7,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT50",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT51",
+    "Amount": 251,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT52",
+    "Amount": 252,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT53",
+    "Amount": 253,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -5,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT54",
+    "Amount": 254,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -13,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT55",
+    "Amount": 255,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -5,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT56",
+    "Amount": 256,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -25,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT57",
+    "Amount": 257,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT58",
+    "Amount": 258,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -19,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT59",
+    "Amount": 259,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT6",
+    "Amount": 206,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -29,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT60",
+    "Amount": 260,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -16,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT61",
+    "Amount": 261,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -4,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT62",
+    "Amount": 262,
+    "Currency": "USD",
+    "ValueDateOffsetDays": 0,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT63",
+    "Amount": 263,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -2,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT64",
+    "Amount": 264,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -6,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT65",
+    "Amount": 265,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -27,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT66",
+    "Amount": 266,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -24,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT67",
+    "Amount": 267,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -3,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT68",
+    "Amount": 268,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT69",
+    "Amount": 269,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -1,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT7",
+    "Amount": 207,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -19,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT70",
+    "Amount": 270,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -6,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT71",
+    "Amount": 271,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -5,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT72",
+    "Amount": 272,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT73",
+    "Amount": 273,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -7,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT74",
+    "Amount": 274,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -17,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT75",
+    "Amount": 275,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -6,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT76",
+    "Amount": 276,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -18,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT77",
+    "Amount": 277,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -17,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT78",
+    "Amount": 278,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT79",
+    "Amount": 279,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -16,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT8",
+    "Amount": 208,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -18,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT80",
+    "Amount": 280,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -29,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT81",
+    "Amount": 281,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -1,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT82",
+    "Amount": 282,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -24,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT83",
+    "Amount": 283,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT84",
+    "Amount": 284,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -26,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT85",
+    "Amount": 285,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -8,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT86",
+    "Amount": 286,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -24,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT87",
+    "Amount": 287,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -22,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT88",
+    "Amount": 288,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -15,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT89",
+    "Amount": 289,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -10,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT9",
+    "Amount": 209,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -21,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT90",
+    "Amount": 290,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -26,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT91",
+    "Amount": 291,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -21,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT92",
+    "Amount": 292,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -25,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT93",
+    "Amount": 293,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -26,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT94",
+    "Amount": 294,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -12,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT95",
+    "Amount": 295,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -15,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT96",
+    "Amount": 296,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT97",
+    "Amount": 297,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT98",
+    "Amount": 298,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 0
+  },
+  {
+    "Reference": "NOISETGT99",
+    "Amount": 299,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -7,
+    "Reason": 0
+  },
+  {
+    "Reference": "SPLIT150",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": 0,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT150",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -4,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT150",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT150",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -17,
+    "Reason": 6
+  },
+  {
+    "Reference": "SPLIT151",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -13,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT151",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -18,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT151",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -6,
+    "Reason": 6
+  },
+  {
+    "Reference": "SPLIT152",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -8,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT152",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": 0,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT152",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": 0,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT152",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT152",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -18,
+    "Reason": 6
+  },
+  {
+    "Reference": "SPLIT153",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -16,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT153",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -7,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT153",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -13,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT153",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -18,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT153",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -19,
+    "Reason": 6
+  },
+  {
+    "Reference": "SPLIT154",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -12,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT154",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -10,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT154",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -7,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT154",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -18,
+    "Reason": 6
+  },
+  {
+    "Reference": "SPLIT155",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -6,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT155",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -4,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT155",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -27,
+    "Reason": 6
+  },
+  {
+    "Reference": "SPLIT156",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -29,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT156",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -2,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT156",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -3,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT156",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -6,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT156",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -13,
+    "Reason": 6
+  },
+  {
+    "Reference": "SPLIT157",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT157",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -6,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT157",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -29,
+    "Reason": 6
+  },
+  {
+    "Reference": "SPLIT158",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -8,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT158",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -2,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT158",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -14,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT158",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -22,
+    "Reason": 6
+  },
+  {
+    "Reference": "SPLIT159",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT159",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -27,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT159",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -2,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT159",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -13,
+    "Reason": 6
+  },
+  {
+    "Reference": "SPLIT160",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -20,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT160",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -15,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT160",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -25,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT160",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT160",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -6,
+    "Reason": 6
+  },
+  {
+    "Reference": "SPLIT161",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -23,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT161",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -4,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT161",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT161",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT161",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -18,
+    "Reason": 6
+  },
+  {
+    "Reference": "SPLIT162",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -6,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT162",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -4,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT162",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -14,
+    "Reason": 6
+  },
+  {
+    "Reference": "SPLIT163",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -26,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT163",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -4,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT163",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -27,
+    "Reason": 6
+  },
+  {
+    "Reference": "SPLIT164",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -18,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT164",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": 0,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT164",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -29,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT164",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -19,
+    "Reason": 6
+  },
+  {
+    "Reference": "SPLIT165",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -15,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT165",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -28,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT165",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -22,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT165",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -23,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT165",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -4,
+    "Reason": 6
+  },
+  {
+    "Reference": "SPLIT166",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -4,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT166",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -11,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT166",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -16,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT166",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -29,
+    "Reason": 6
+  },
+  {
+    "Reference": "SPLIT167",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -6,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT167",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -5,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT167",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -7,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT167",
+    "Amount": 250,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -15,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT167",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -13,
+    "Reason": 6
+  },
+  {
+    "Reference": "SPLIT168",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -7,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT168",
+    "Amount": 500,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -4,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT168",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -23,
+    "Reason": 6
+  },
+  {
+    "Reference": "SPLIT169",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -26,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT169",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT169",
+    "Amount": 333.33,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -9,
+    "Reason": 5
+  },
+  {
+    "Reference": "SPLIT169",
+    "Amount": 1000,
+    "Currency": "USD",
+    "ValueDateOffsetDays": -23,
+    "Reason": 6
+  }
+]
