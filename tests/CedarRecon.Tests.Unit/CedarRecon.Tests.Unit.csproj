@@ -30,6 +30,11 @@
     <ProjectReference Include="..\..\src\CedarRecon.Indexing\CedarRecon.Indexing.csproj" />
     <ProjectReference Include="..\CedarRecon.Reference\CedarRecon.Reference.csproj" />
   </ItemGroup>
+	
+  <ItemGroup>
+    <None Include="Matching\Golden\*.json" CopyToOutputDirectory="PreserveNewest" />
+	<None Include="Classification\Golden\*.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
 
   <ItemGroup>
     <Using Include="Xunit" />

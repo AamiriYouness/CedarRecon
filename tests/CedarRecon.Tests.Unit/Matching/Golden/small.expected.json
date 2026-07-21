@@ -1,0 +1,298 @@
+[
+  {
+    "SourceReference": "MATCHABLE0",
+    "SourceAmount": 500,
+    "TargetReference": "MATCHABLE0",
+    "TargetAmount": 500,
+    "Strategy": 0,
+    "Confidence": 1.00
+  },
+  {
+    "SourceReference": "MATCHABLE1",
+    "SourceAmount": 500,
+    "TargetReference": "MATCHABLE1",
+    "TargetAmount": 500,
+    "Strategy": 0,
+    "Confidence": 1.00
+  },
+  {
+    "SourceReference": "MATCHABLE10",
+    "SourceAmount": 500,
+    "TargetReference": "MATCHABLE10",
+    "TargetAmount": 500,
+    "Strategy": 0,
+    "Confidence": 1.00
+  },
+  {
+    "SourceReference": "MATCHABLE11",
+    "SourceAmount": 500,
+    "TargetReference": "MATCHABLE11",
+    "TargetAmount": 500,
+    "Strategy": 0,
+    "Confidence": 1.00
+  },
+  {
+    "SourceReference": "MATCHABLE12",
+    "SourceAmount": 500,
+    "TargetReference": "MATCHABLE12",
+    "TargetAmount": 500,
+    "Strategy": 0,
+    "Confidence": 1.00
+  },
+  {
+    "SourceReference": "MATCHABLE13",
+    "SourceAmount": 500,
+    "TargetReference": "MATCHABLE13",
+    "TargetAmount": 500,
+    "Strategy": 0,
+    "Confidence": 1.00
+  },
+  {
+    "SourceReference": "MATCHABLE14",
+    "SourceAmount": 500,
+    "TargetReference": "MATCHABLE14",
+    "TargetAmount": 500,
+    "Strategy": 0,
+    "Confidence": 1.00
+  },
+  {
+    "SourceReference": "MATCHABLE15",
+    "SourceAmount": 500,
+    "TargetReference": "MATCHABLE15",
+    "TargetAmount": 500,
+    "Strategy": 0,
+    "Confidence": 1.00
+  },
+  {
+    "SourceReference": "MATCHABLE16",
+    "SourceAmount": 500,
+    "TargetReference": "MATCHABLE16",
+    "TargetAmount": 500,
+    "Strategy": 0,
+    "Confidence": 1.00
+  },
+  {
+    "SourceReference": "MATCHABLE17",
+    "SourceAmount": 500,
+    "TargetReference": "MATCHABLE17",
+    "TargetAmount": 500,
+    "Strategy": 0,
+    "Confidence": 1.00
+  },
+  {
+    "SourceReference": "MATCHABLE18",
+    "SourceAmount": 500,
+    "TargetReference": "MATCHABLE18",
+    "TargetAmount": 500,
+    "Strategy": 0,
+    "Confidence": 1.00
+  },
+  {
+    "SourceReference": "MATCHABLE19",
+    "SourceAmount": 500,
+    "TargetReference": "MATCHABLE19",
+    "TargetAmount": 500,
+    "Strategy": 0,
+    "Confidence": 1.00
+  },
+  {
+    "SourceReference": "MATCHABLE2",
+    "SourceAmount": 500,
+    "TargetReference": "MATCHABLE2",
+    "TargetAmount": 500,
+    "Strategy": 0,
+    "Confidence": 1.00
+  },
+  {
+    "SourceReference": "MATCHABLE3",
+    "SourceAmount": 500,
+    "TargetReference": "MATCHABLE3",
+    "TargetAmount": 500,
+    "Strategy": 0,
+    "Confidence": 1.00
+  },
+  {
+    "SourceReference": "MATCHABLE4",
+    "SourceAmount": 500,
+    "TargetReference": "MATCHABLE4",
+    "TargetAmount": 500,
+    "Strategy": 0,
+    "Confidence": 1.00
+  },
+  {
+    "SourceReference": "MATCHABLE5",
+    "SourceAmount": 500,
+    "TargetReference": "MATCHABLE5",
+    "TargetAmount": 500,
+    "Strategy": 0,
+    "Confidence": 1.00
+  },
+  {
+    "SourceReference": "MATCHABLE6",
+    "SourceAmount": 500,
+    "TargetReference": "MATCHABLE6",
+    "TargetAmount": 500,
+    "Strategy": 0,
+    "Confidence": 1.00
+  },
+  {
+    "SourceReference": "MATCHABLE7",
+    "SourceAmount": 500,
+    "TargetReference": "MATCHABLE7",
+    "TargetAmount": 500,
+    "Strategy": 0,
+    "Confidence": 1.00
+  },
+  {
+    "SourceReference": "MATCHABLE8",
+    "SourceAmount": 500,
+    "TargetReference": "MATCHABLE8",
+    "TargetAmount": 500,
+    "Strategy": 0,
+    "Confidence": 1.00
+  },
+  {
+    "SourceReference": "MATCHABLE9",
+    "SourceAmount": 500,
+    "TargetReference": "MATCHABLE9",
+    "TargetAmount": 500,
+    "Strategy": 0,
+    "Confidence": 1.00
+  },
+  {
+    "SourceReference": "MISMATCH192",
+    "SourceAmount": 100,
+    "TargetReference": "MISMATCH192",
+    "TargetAmount": 101,
+    "Strategy": 1,
+    "Confidence": 0.8867
+  },
+  {
+    "SourceReference": "MISMATCH197",
+    "SourceAmount": 100,
+    "TargetReference": "MISMATCH197",
+    "TargetAmount": 101,
+    "Strategy": 1,
+    "Confidence": 0.8533
+  },
+  {
+    "SourceReference": "MISMATCH198",
+    "SourceAmount": 100,
+    "TargetReference": "MISMATCH198",
+    "TargetAmount": 102,
+    "Strategy": 1,
+    "Confidence": 0.890
+  },
+  {
+    "SourceReference": "SPLIT150",
+    "SourceAmount": 1000,
+    "TargetReference": "SPLIT150",
+    "TargetAmount": 500,
+    "Strategy": 2,
+    "Confidence": 0.60
+  },
+  {
+    "SourceReference": "SPLIT151",
+    "SourceAmount": 1000,
+    "TargetReference": "SPLIT151",
+    "TargetAmount": 250,
+    "Strategy": 2,
+    "Confidence": 0.60
+  },
+  {
+    "SourceReference": "SPLIT153",
+    "SourceAmount": 1000,
+    "TargetReference": "SPLIT153",
+    "TargetAmount": 500,
+    "Strategy": 2,
+    "Confidence": 0.60
+  },
+  {
+    "SourceReference": "SPLIT154",
+    "SourceAmount": 1000,
+    "TargetReference": "SPLIT154",
+    "TargetAmount": 250,
+    "Strategy": 2,
+    "Confidence": 0.60
+  },
+  {
+    "SourceReference": "SPLIT156",
+    "SourceAmount": 1000,
+    "TargetReference": "SPLIT156",
+    "TargetAmount": 250,
+    "Strategy": 2,
+    "Confidence": 0.60
+  },
+  {
+    "SourceReference": "SPLIT157",
+    "SourceAmount": 1000,
+    "TargetReference": "SPLIT157",
+    "TargetAmount": 500,
+    "Strategy": 2,
+    "Confidence": 0.60
+  },
+  {
+    "SourceReference": "SPLIT158",
+    "SourceAmount": 1000,
+    "TargetReference": "SPLIT158",
+    "TargetAmount": 500,
+    "Strategy": 2,
+    "Confidence": 0.60
+  },
+  {
+    "SourceReference": "SPLIT160",
+    "SourceAmount": 1000,
+    "TargetReference": "SPLIT160",
+    "TargetAmount": 250,
+    "Strategy": 2,
+    "Confidence": 0.60
+  },
+  {
+    "SourceReference": "SPLIT162",
+    "SourceAmount": 1000,
+    "TargetReference": "SPLIT162",
+    "TargetAmount": 500,
+    "Strategy": 2,
+    "Confidence": 0.60
+  },
+  {
+    "SourceReference": "SPLIT163",
+    "SourceAmount": 1000,
+    "TargetReference": "SPLIT163",
+    "TargetAmount": 250,
+    "Strategy": 2,
+    "Confidence": 0.60
+  },
+  {
+    "SourceReference": "SPLIT164",
+    "SourceAmount": 1000,
+    "TargetReference": "SPLIT164",
+    "TargetAmount": 500,
+    "Strategy": 2,
+    "Confidence": 0.60
+  },
+  {
+    "SourceReference": "SPLIT167",
+    "SourceAmount": 1000,
+    "TargetReference": "SPLIT167",
+    "TargetAmount": 250,
+    "Strategy": 2,
+    "Confidence": 0.60
+  },
+  {
+    "SourceReference": "SPLIT168",
+    "SourceAmount": 1000,
+    "TargetReference": "SPLIT168",
+    "TargetAmount": 250,
+    "Strategy": 2,
+    "Confidence": 0.60
+  },
+  {
+    "SourceReference": "SPLIT169",
+    "SourceAmount": 1000,
+    "TargetReference": "SPLIT169",
+    "TargetAmount": 500,
+    "Strategy": 2,
+    "Confidence": 0.60
+  }
+]
