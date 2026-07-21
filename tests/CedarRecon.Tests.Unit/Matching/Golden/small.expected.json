@@ -160,25 +160,81 @@
     "Confidence": 1.00
   },
   {
+    "SourceReference": "MISMATCH190",
+    "SourceAmount": 100,
+    "TargetReference": "MISMATCH190",
+    "TargetAmount": 103,
+    "Strategy": 1,
+    "Confidence": 0.860
+  },
+  {
+    "SourceReference": "MISMATCH191",
+    "SourceAmount": 100,
+    "TargetReference": "MISMATCH191",
+    "TargetAmount": 102,
+    "Strategy": 1,
+    "Confidence": 0.890
+  },
+  {
     "SourceReference": "MISMATCH192",
     "SourceAmount": 100,
     "TargetReference": "MISMATCH192",
     "TargetAmount": 101,
     "Strategy": 1,
-    "Confidence": 0.8867
+    "Confidence": 0.920
+  },
+  {
+    "SourceReference": "MISMATCH193",
+    "SourceAmount": 100,
+    "TargetReference": "MISMATCH193",
+    "TargetAmount": 101,
+    "Strategy": 1,
+    "Confidence": 0.920
+  },
+  {
+    "SourceReference": "MISMATCH194",
+    "SourceAmount": 100,
+    "TargetReference": "MISMATCH194",
+    "TargetAmount": 101,
+    "Strategy": 1,
+    "Confidence": 0.920
+  },
+  {
+    "SourceReference": "MISMATCH195",
+    "SourceAmount": 100,
+    "TargetReference": "MISMATCH195",
+    "TargetAmount": 104,
+    "Strategy": 1,
+    "Confidence": 0.830
+  },
+  {
+    "SourceReference": "MISMATCH196",
+    "SourceAmount": 100,
+    "TargetReference": "MISMATCH196",
+    "TargetAmount": 102,
+    "Strategy": 1,
+    "Confidence": 0.890
   },
   {
     "SourceReference": "MISMATCH197",
     "SourceAmount": 100,
     "TargetReference": "MISMATCH197",
-    "TargetAmount": 101,
+    "TargetAmount": 102,
     "Strategy": 1,
-    "Confidence": 0.8533
+    "Confidence": 0.890
   },
   {
     "SourceReference": "MISMATCH198",
     "SourceAmount": 100,
     "TargetReference": "MISMATCH198",
+    "TargetAmount": 101,
+    "Strategy": 1,
+    "Confidence": 0.920
+  },
+  {
+    "SourceReference": "MISMATCH199",
+    "SourceAmount": 100,
+    "TargetReference": "MISMATCH199",
     "TargetAmount": 102,
     "Strategy": 1,
     "Confidence": 0.890
