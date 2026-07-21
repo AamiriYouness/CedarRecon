@@ -169,12 +169,170 @@ public static class ScenarioBuilder
         }
 
         // Same reference both sides, amount differs slightly — exercises
-        // FuzzyMatchStrategy's tolerance-window candidates.
+        // FuzzyMatchStrategy's tolerance-window candidates. Date must also
+        // be shared (or within FuzzyMatchStrategy's date tolerance, default
+        // 3 days) — two independent rnd.Next(0,30) draws average ~10 days
+        // apart, which would fail IsDateWithinTolerance and silently drop
+        // these to unmatched instead of exercising Fuzzy at all.
         for (var i = 0; i < mismatchCount; i++)
         {
             var refKey = $"MISMATCH-{refIndex++}";
+            var sharedDate = BaseDate.AddDays(-rnd.Next(0, 30));
+            source.Add(Tx(refKey, 100m, sharedDate));
+            target.Add(Tx(refKey, 100m + rnd.Next(1, 5), sharedDate)); // small diff — within fuzzy tolerance
+        }
+
+        return (source, target);
+    }
+
+    /// <summary>
+    /// Skewed variant of Build — for the classification golden suite's
+    /// third required dataset (small/medium/skewed per issue #4). NOT just
+    /// Build() at a different N: distribution is deliberately unbalanced
+    /// (heavy duplicates + mismatches, light noise/split/consol) so it
+    /// exercises a different code-path emphasis than small/medium's mostly-
+    /// noise shape — in particular, DuplicateInSource/DuplicateInTarget's
+    /// group-range scanning gets stressed far harder here than in the
+    /// default distribution, where duplicates are only 15% of the mix.
+    /// </summary>
+    public static (List<Transaction> Source, List<Transaction> Target, List<MatchedPair> Matched)
+        BuildSkewed(int totalReferences, int seed)
+    {
+        var rnd = new Random(seed);
+        var source = new List<Transaction>(totalReferences);
+        var target = new List<Transaction>(totalReferences);
+        var matched = new List<MatchedPair>(Math.Max(1, totalReferences / 10));
+
+        var dupCount = (int)(totalReferences * 0.45);
+        var mismatchCount = (int)(totalReferences * 0.30);
+        var noiseCount = (int)(totalReferences * 0.10);
+        var splitCount = (int)(totalReferences * 0.05);
+        var consolCount = totalReferences - dupCount - mismatchCount - noiseCount - splitCount;
+
+        var refIndex = 0;
+
+        for (var i = 0; i < dupCount; i++)
+        {
+            // Wider leg range than default (2-8 vs 2-4) — stresses the
+            // duplicate-group scan with larger single groups, not just
+            // more groups.
+            var legs = rnd.Next(2, 8);
+            var refKey = $"SKEWDUP-{refIndex++}";
+            for (var l = 0; l < legs; l++)
+                source.Add(Tx(refKey, 100m + l, rnd));
+        }
+
+        for (var i = 0; i < mismatchCount; i++)
+        {
+            var refKey = $"SKEWMISMATCH-{refIndex++}";
             source.Add(Tx(refKey, 100m, rnd));
-            target.Add(Tx(refKey, 100m + rnd.Next(1, 5), rnd)); // small diff — within fuzzy tolerance
+            target.Add(Tx(refKey, 100m + rnd.Next(1, 50), rnd));
+        }
+
+        for (var i = 0; i < noiseCount; i++)
+        {
+            source.Add(Tx($"SKEWNOISE-SRC-{refIndex}", 100m + i, rnd));
+            target.Add(Tx($"SKEWNOISE-TGT-{refIndex}", 200m + i, rnd));
+            refIndex++;
+        }
+
+        for (var i = 0; i < splitCount; i++)
+        {
+            var legs = rnd.Next(2, 5);
+            var refKey = $"SKEWSPLIT-{refIndex++}";
+            source.Add(Tx(refKey, 1000m, rnd));
+            for (var l = 0; l < legs; l++)
+                target.Add(Tx(refKey, 1000m / legs, rnd));
+        }
+
+        for (var i = 0; i < consolCount; i++)
+        {
+            var legs = rnd.Next(2, 5);
+            var refKey = $"SKEWCONSOL-{refIndex++}";
+            for (var l = 0; l < legs; l++)
+                source.Add(Tx(refKey, 1000m / legs, rnd));
+            target.Add(Tx(refKey, 1000m, rnd));
+        }
+
+        var matchedSampleSize = Math.Min(Math.Max(1, refIndex / 20), 50_000);
+        for (var i = 0; i < matchedSampleSize; i++)
+        {
+            var refKey = $"SKEWMATCHED-{i}";
+            var s = Tx(refKey, 500m, rnd);
+            var t = Tx(refKey, 500m, rnd);
+            matched.Add(new MatchedPair(s, t, ConfidenceScore.Of(1.0m), MatchStrategy.Exact));
+        }
+
+        return (source, target, matched);
+    }
+
+    /// <summary>
+    /// Skewed variant of BuildRaw — same distribution rationale as
+    /// BuildSkewed, for the matching golden suite's third required dataset.
+    /// </summary>
+    public static (List<Transaction> Source, List<Transaction> Target)
+        BuildRawSkewed(int totalReferences, int seed)
+    {
+        var rnd = new Random(seed);
+        var source = new List<Transaction>(totalReferences);
+        var target = new List<Transaction>(totalReferences);
+
+        var mismatchCount = (int)(totalReferences * 0.40); // heavy Fuzzy exercise
+        var dupCount = (int)(totalReferences * 0.30);
+        var noiseCount = (int)(totalReferences * 0.10);
+        var splitCount = (int)(totalReferences * 0.05);
+        var consolCount = (int)(totalReferences * 0.05);
+        var matchableCount = totalReferences - mismatchCount - dupCount - noiseCount - splitCount - consolCount;
+
+        var refIndex = 0;
+
+        for (var i = 0; i < matchableCount; i++)
+        {
+            var refKey = $"SKEWMATCHABLE-{refIndex++}";
+            var sharedDate = BaseDate.AddDays(-rnd.Next(0, 30));
+            source.Add(Tx(refKey, 500m, sharedDate));
+            target.Add(Tx(refKey, 500m, sharedDate));
+        }
+
+        for (var i = 0; i < mismatchCount; i++)
+        {
+            var refKey = $"SKEWMISMATCH-{refIndex++}";
+            var sharedDate = BaseDate.AddDays(-rnd.Next(0, 30));
+            source.Add(Tx(refKey, 100m, sharedDate));
+            target.Add(Tx(refKey, 100m + rnd.Next(1, 5), sharedDate));
+        }
+
+        for (var i = 0; i < dupCount; i++)
+        {
+            var legs = rnd.Next(2, 8);
+            var refKey = $"SKEWDUP-{refIndex++}";
+            for (var l = 0; l < legs; l++)
+                source.Add(Tx(refKey, 100m + l, rnd));
+        }
+
+        for (var i = 0; i < noiseCount; i++)
+        {
+            source.Add(Tx($"SKEWNOISE-SRC-{refIndex}", 100m + i, rnd));
+            target.Add(Tx($"SKEWNOISE-TGT-{refIndex}", 200m + i, rnd));
+            refIndex++;
+        }
+
+        for (var i = 0; i < splitCount; i++)
+        {
+            var legs = rnd.Next(2, 5);
+            var refKey = $"SKEWSPLIT-{refIndex++}";
+            source.Add(Tx(refKey, 1000m, rnd));
+            for (var l = 0; l < legs; l++)
+                target.Add(Tx(refKey, 1000m / legs, rnd));
+        }
+
+        for (var i = 0; i < consolCount; i++)
+        {
+            var legs = rnd.Next(2, 5);
+            var refKey = $"SKEWCONSOL-{refIndex++}";
+            for (var l = 0; l < legs; l++)
+                source.Add(Tx(refKey, 1000m / legs, rnd));
+            target.Add(Tx(refKey, 1000m, rnd));
         }
 
         return (source, target);

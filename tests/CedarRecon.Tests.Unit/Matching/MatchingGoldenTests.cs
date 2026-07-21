@@ -22,11 +22,14 @@ public class MatchingGoldenTests
     private static readonly JsonSerializerOptions GoldenJsonOptions = new() { WriteIndented = true };
 
     [Theory]
-    [InlineData("small", 200, 1)]
-    [InlineData("medium", 5_000, 2)]
-    public async Task Golden_MatchesCommittedExpectedOutput(string name, int n, int seed)
+    [InlineData("small", 200, 1, false)]
+    [InlineData("medium", 5_000, 2, false)]
+    [InlineData("skewed", 3_000, 3, true)]
+    public async Task Golden_MatchesCommittedExpectedOutput(string name, int n, int seed, bool useSkewed)
     {
-        var (source, target) = ScenarioBuilder.BuildRaw(n, seed);
+        var (source, target) = useSkewed
+            ? ScenarioBuilder.BuildRawSkewed(n, seed)
+            : ScenarioBuilder.BuildRaw(n, seed);
 
         var matches = await MatchingTestHelper.RunMatching(source, target);
         var actual = GoldenMatchSerializer.ToComparable(matches);
@@ -96,9 +99,12 @@ public class MatchingGoldenTests
     /// correctly regardless of build configuration or working directory.
     /// </summary>
     private static async Task GenerateGoldenFile(
-        string name, int n, int seed, [CallerFilePath] string sourceFilePath = "")
+        string name, int n, int seed, bool useSkewed = false,
+        [CallerFilePath] string sourceFilePath = "")
     {
-        var (source, target) = ScenarioBuilder.BuildRaw(n, seed);
+        var (source, target) = useSkewed
+            ? ScenarioBuilder.BuildRawSkewed(n, seed)
+            : ScenarioBuilder.BuildRaw(n, seed);
         var matches = await MatchingTestHelper.RunMatching(source, target);
         var comparable = GoldenMatchSerializer.ToComparable(matches);
         var json = JsonSerializer.Serialize(comparable, GoldenJsonOptions);
@@ -124,5 +130,6 @@ public class MatchingGoldenTests
     {
         await GenerateGoldenFile("small", 200, seed: 1);
         await GenerateGoldenFile("medium", 5_000, seed: 2);
+        await GenerateGoldenFile("skewed", 3_000, seed: 3, useSkewed: true);
     }
 }

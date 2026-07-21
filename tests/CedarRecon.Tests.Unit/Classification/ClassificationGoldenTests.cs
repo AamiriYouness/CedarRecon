@@ -19,11 +19,14 @@ public class ClassificationGoldenTests
     private static readonly JsonSerializerOptions GoldenJsonOptions = new() { WriteIndented = true };
 
     [Theory]
-    [InlineData("small", 200, 1)]
-    [InlineData("medium", 5_000, 2)]
-    public async Task Golden_MatchesCommittedExpectedOutput(string name, int n, int seed)
+    [InlineData("small", 200, 1, false)]
+    [InlineData("medium", 5_000, 2, false)]
+    [InlineData("skewed", 3_000, 3, true)]
+    public async Task Golden_MatchesCommittedExpectedOutput(string name, int n, int seed, bool useSkewed)
     {
-        var (source, target, matched) = ScenarioBuilder.Build(n, seed);
+        var (source, target, matched) = useSkewed
+            ? ScenarioBuilder.BuildSkewed(n, seed)
+            : ScenarioBuilder.Build(n, seed);
 
         var results = Columnar().Classify(source, target, matched);
         var actual = GoldenClassificationSerializer.ToComparable(results, ScenarioBuilder.BaseDate);
@@ -50,12 +53,16 @@ public class ClassificationGoldenTests
     {
         await GenerateGoldenFile("small", 200, seed: 1);
         await GenerateGoldenFile("medium", 5_000, seed: 2);
+        await GenerateGoldenFile("skewed", 3_000, seed: 3, useSkewed: true);
     }
 
     private static async Task GenerateGoldenFile(
-        string name, int n, int seed, [CallerFilePath] string sourceFilePath = "")
+        string name, int n, int seed, bool useSkewed = false,
+        [CallerFilePath] string sourceFilePath = "")
     {
-        var (source, target, matched) = ScenarioBuilder.Build(n, seed);
+        var (source, target, matched) = useSkewed
+            ? ScenarioBuilder.BuildSkewed(n, seed)
+            : ScenarioBuilder.Build(n, seed);
         var results = Columnar().Classify(source, target, matched);
         var comparable = GoldenClassificationSerializer.ToComparable(results, ScenarioBuilder.BaseDate);
         var json = JsonSerializer.Serialize(comparable, GoldenJsonOptions);
